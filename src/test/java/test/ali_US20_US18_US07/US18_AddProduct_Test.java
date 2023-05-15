@@ -30,6 +30,7 @@ public class US18_AddProduct_Test {
         Select select = new Select(locaterAli.productDDM);
         select.selectByVisibleText("External/Affiliate Product");
 
+        //Urun bilgileri doldur
         locaterAli.productUrl.sendKeys(ConfigReader.getProperty("prdouct_Url"),
                 Keys.TAB, ConfigReader.getProperty("product_Button"),
                 Keys.TAB, ConfigReader.getProperty("prdouct_Price"),
