@@ -24,6 +24,7 @@ public class US18_AddProduct_Test {
         locaterAli.storeManager.click();
 
         ReusableMethods.click(locaterAli.productsButton);
+
         ReusableMethods.click(locaterAli.addNewProduct);
 
         Select select = new Select(locaterAli.productDDM);
