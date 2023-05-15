@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TestNG_Team7Proje" />
+        <module name="Deneme123" />
       </profile>
     </annotationProcessing>
   </component>
