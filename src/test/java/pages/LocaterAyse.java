@@ -91,7 +91,7 @@ public LocaterAyse(){
     @FindBy(xpath = "(//input[@class='select2-search__field'])[2]")
     public WebElement attributesColorDdm;
     @FindBy(xpath = "//input[@id='attributes_is_active_1']")
-//color'a basinca aktif yazisi cikiyor bunun clik'li olmasi lazim
+
     public WebElement attributesColorActiveCheckbox;
 
     @FindBy(xpath = "(//button[text()='Select all'])[1]")
