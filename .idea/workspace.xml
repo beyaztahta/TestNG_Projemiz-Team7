@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US13_MuhammedAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US13_MuhammedAli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Class1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Class1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +54,42 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Selenium Dosyaları\TESTNGPROJE\TestNG_Projemiz-Team7\src\test\java\test" />
+      <recent name="D:\Selenium Dosyaları\TESTNGPROJE\TestNG_Projemiz-Team7\src\test\java\pages" />
+      <recent name="D:\Selenium Dosyaları\TESTNGPROJE\TestNG_Projemiz-Team7" />
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\resources" />
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\utilities" />
-      <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\pages" />
-      <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.US18_AddProduct_Test.addProduct">
-    <configuration name="US07_CompareTest.testCompare" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
+  <component name="RunManager" selected="TestNG.US13_MuhammedAli">
+    <configuration name="US11_MuhammedAli" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestNG_Projemiz-Team7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US07_CompareTest" />
-      <option name="METHOD_NAME" value="testCompare" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.US11_MuhammedAli" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US13_MuhammedAli" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestNG_Projemiz-Team7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.US13_MuhammedAli" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -110,24 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US20_Coupons_NegativeTest.testaddNewCoupons" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US20_Coupons_NegativeTest" />
-      <option name="METHOD_NAME" value="testaddNewCoupons" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="US20_Coupons_PositiveTest.testaddNewCoupons" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
@@ -148,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.US13_MuhammedAli" />
+        <item itemvalue="TestNG.US11_MuhammedAli" />
         <item itemvalue="TestNG.US18_AddProduct_Test.addProduct" />
         <item itemvalue="TestNG.US20_Coupons_NegativeTest" />
         <item itemvalue="TestNG.US20_Coupons_PositiveTest.testaddNewCoupons" />
-        <item itemvalue="TestNG.US20_Coupons_NegativeTest.testaddNewCoupons" />
-        <item itemvalue="TestNG.US07_CompareTest.testCompare" />
       </list>
     </recent_temporary>
   </component>
