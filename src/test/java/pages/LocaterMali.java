@@ -96,13 +96,32 @@ public class LocaterMali {
    @FindBy(xpath = "(//bdi)[1]")
    public WebElement price;
 
-   @FindBy(xpath = "(//span[@class='instock'])[1]")
-   public WebElement ınStock;
+    @FindBy(xpath = "(//span[@class='instock'])[1]")
+    public WebElement ınStock;
+    @FindBy(xpath = "//div[text()='Attributes']")
+    public WebElement attributesButton;
+
+    @FindBy(id= "attributes_is_active_1")
+    public WebElement colorCheckBox;
+    @FindBy(id= "attributes_is_active_2")
+    public WebElement sizeCheckBox;
+    @FindBy(xpath = "(//input[@class='select2-search__field'])[2]")
+    public WebElement colorInputBox;
+    @FindBy(xpath = "//select[@id='attributes_value_2']")
+    public WebElement sizeInputDDM;
+
+   @FindBy(xpath = "(//li[@class='select2-selection__choice'])[2]")
+   public WebElement sizeText;
+    @FindBy(xpath = "//strong[text()='Catalog visibility:']")
+    public WebElement catalogVisibility;
+
+ @FindBy(xpath = "(//button[text()='Add New'])[1]")
+ public WebElement addNewColorButton;
+ @FindBy(xpath = "(//button[text()='Add New'])[2]")
+ public WebElement addNewSizeButton;
 
 
 
-
-    //*[text()='Product Successfully Published.']
 
 
 
