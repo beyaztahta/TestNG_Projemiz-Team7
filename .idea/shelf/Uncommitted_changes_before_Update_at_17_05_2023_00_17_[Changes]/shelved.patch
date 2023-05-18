@@ -1,0 +1,626 @@
+Index: src/test/java/test/US11_MuhammedAli.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package test;\r\nimport org.openqa.selenium.*;\r\nimport org.openqa.selenium.interactions.Actions;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\nimport pages.LocaterAli;\r\nimport pages.LocaterMuhammedAli;\r\nimport utilities.ConfigReader;\r\nimport utilities.Driver;\r\nimport utilities.ReusableMethods;\r\n\r\npublic class US11_MuhammedAli {\r\n    WebDriver driver;\r\n\r\n    @Test(priority = 1)\r\n    public void US11_TC01_1_WebAdresineErisim() {\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"url\"));\r\n    }\r\n    @Test(priority = 2)\r\n    public void US11_TC01_2_LoginButonuCalisir() {\r\n        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();\r\n        LogIn.signInButton.click();\r\n    }\r\n    @Test(priority = 3)\r\n    public void US11_TC01_3_LoginEkranResmi() {\r\n        ReusableMethods.tumSayfaResmi(\"_US11_LoginResmi\");\r\n    }\r\n    @Test(priority = 4)\r\n    public void US11_TC01_4_UserNameGirisi() {\r\n        LocaterMuhammedAli kullanici = new LocaterMuhammedAli();\r\n        kullanici.userNameGir.sendKeys(ConfigReader.getProperty(\"userNameV\"));\r\n    }\r\n    @Test(priority = 5)\r\n    public void US11_TC01_5_SifreNameGirisi() {\r\n        LocaterMuhammedAli sifre = new LocaterMuhammedAli();\r\n        sifre.sifreGir.sendKeys(ConfigReader.getProperty(\"passwordV\"));\r\n    }\r\n    @Test(priority = 6)\r\n    public void US11_TC01_6_LoginPenceresiOnay() {\r\n        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();\r\n        LogIn.loginOnay.click();\r\n    }\r\n    @Test(priority = 6)\r\n    public void US11_TC01_7_AccountSayfasiTeyid() {\r\n        Assert.assertTrue(driver.getTitle().contains(\"hubcomfy\"));\r\n    }\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/test/US11_MuhammedAli.java b/src/test/java/test/US11_MuhammedAli.java
+--- a/src/test/java/test/US11_MuhammedAli.java	(revision 9a0f86cd31fe43f0fa4ce3f3fb60e6df592bdd35)
++++ b/src/test/java/test/US11_MuhammedAli.java	(date 1684242823239)
+@@ -1,9 +1,8 @@
+ package test;
++
+ import org.openqa.selenium.*;
+-import org.openqa.selenium.interactions.Actions;
+ import org.testng.Assert;
+ import org.testng.annotations.Test;
+-import pages.LocaterAli;
+ import pages.LocaterMuhammedAli;
+ import utilities.ConfigReader;
+ import utilities.Driver;
+@@ -12,38 +11,146 @@
+ public class US11_MuhammedAli {
+     WebDriver driver;
+ 
+-    @Test(priority = 1)
++    @Test(priority = 1)     // WEB SİTESİNE GİT
+     public void US11_TC01_1_WebAdresineErisim() {
+-        Driver.getDriver().get(ConfigReader.getProperty("url"));
++        driver = Driver.getDriver();
++        driver.get(ConfigReader.getProperty("url"));
+     }
+-    @Test(priority = 2)
++
++    @Test(priority = 2)     // SIGN IN BUTONUNA TIKLA
+     public void US11_TC01_2_LoginButonuCalisir() {
+         LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
+         LogIn.signInButton.click();
+     }
+-    @Test(priority = 3)
++
++    @Test(priority = 3)     // WEB SAYFASININ RESMİNİ KAYDET
+     public void US11_TC01_3_LoginEkranResmi() {
+         ReusableMethods.tumSayfaResmi("_US11_LoginResmi");
+     }
+-    @Test(priority = 4)
++
++    @Test(priority = 4)     // KULLANICI İSMİ GİR
+     public void US11_TC01_4_UserNameGirisi() {
+         LocaterMuhammedAli kullanici = new LocaterMuhammedAli();
+         kullanici.userNameGir.sendKeys(ConfigReader.getProperty("userNameV"));
+     }
+-    @Test(priority = 5)
+-    public void US11_TC01_5_SifreNameGirisi() {
++
++    @Test(priority = 5)     // ŞİFRE GİR
++    public void US11_TC01_5_SifreGirisi() {
+         LocaterMuhammedAli sifre = new LocaterMuhammedAli();
+         sifre.sifreGir.sendKeys(ConfigReader.getProperty("passwordV"));
+     }
+-    @Test(priority = 6)
+-    public void US11_TC01_6_LoginPenceresiOnay() {
++
++    @Test(priority = 6)     // AÇILAN LOGİN PENCERESİNDE SIGN IN BUTONUNA BAS
++    public void US11_TC01_6_LoginPenceresiOnay() throws InterruptedException {
+         LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
+         LogIn.loginOnay.click();
++
++        // Sayfanın en altına git
++        JavascriptExecutor js = (JavascriptExecutor) driver;
++        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
++        Thread.sleep(5000);     //  5 saniye bekleyecek
++    }
++
++    @Test(priority = 7)     // SAYFA BAŞLIĞINI KONTROL ET
++    public void US11_TC01_7_MyAccountSayfasiGoruntulenmeli() throws InterruptedException {
++        driver = Driver.getDriver();
++        System.out.println("Title Başlık İçeriği:        " + driver.getTitle());
++        Assert.assertTrue(driver.getTitle().contains("account"));
++    }
++
++    @Test(priority = 8)     // MY ACCOUNT SAYFASINA GİT
++    public void ____My_Account_SayfasinaTikla() {
++        LocaterMuhammedAli yeni = new LocaterMuhammedAli();
++        yeni.MyAccountTikla.click();
++    }
++
++    @Test(priority = 9)     // ORDERS GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC02_1_AccoundSayfasindaOrdersGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.OrdersGorulmeli.getText().contains("ORDERS"));
++    }
++
++    @Test(priority = 10)    // DOWNLOADS GÖRÜNTÜLENDİ Mİ
++    public void US11_TC02_2_AccoundSayfasindaDownloadsGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.MyAccount_Download_Gorulmeli.getText().contains("DOWNLOADS"));
++    }
++
++    @Test(priority = 11)    // ADDRESSES GÖRÜNTÜLENDİ Mİ
++    public void US11_TC02_3_AccoundSayfasindaAddressesGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.AddressesVarmi.getText().contains("ADDRESSES"));
++    }
++
++    @Test(priority = 12)    // ACCOUNT DETAILS GÖRÜNTÜLENDİ Mİ
++    public void US11_TC02_4_AccoundSayfasindaAccount_detailsGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.Account_detailsVarmi.getText().contains("ACCOUNT DETAILS"));
++    }
++
++    @Test(priority = 13)    // ACCOUNT WISHLIST GÖRÜNTÜLENDİ Mİ
++    public void US11_TC02_5_AccoundSayfasindaWishlistGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.WishlistVarmi.getText().contains("WISHLIST"));
++    }
++
++    @Test(priority = 14)    // ACCOUNT LOGOUT GÖRÜNTÜLENDİ Mİ
++    public void US11_TC02_6_AccoundSayfasindaLogoutGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.LogoutVarmi.getText().contains("LOGOUT"));
++    }
++
++    @Test(priority = 15)    // STORE MANAGER GÖRÜNTÜLENDİ Mİ
++    public void US11_TC03_1_DashboardAltindaStoreManagerGoruntullenemeli() throws InterruptedException{
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaStore_ManagerVarmi.getText().contains("Store Manager"));
++    }
++
++    @Test(priority = 16)    // DASHBOARD ALTINDA ORDERS GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_2_DashboardAltindaOrdersGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaOrdersVarmi.getText().contains("Orders"));
++    }
++
++    @Test(priority = 17)    // DASHBOARD ALTINDA DOWNLOADS GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_3_DashboardAltindaDownloadsGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaDownloadsVarmi.getText().contains("Downloads"));
++    }
++
++    @Test(priority = 18)    // DASHBOARD ALTINDA ADDRESS GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_4_DashboardAltindaAddressesGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaAddressesVarmi.getText().contains("Addresses"));
++    }
++
++    @Test(priority = 19)    // DASHBOARD ALTINDA ACCOUNT DETAILS GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_5_DashboardAltindaAccountDetailsGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaAccount_detailsVarmi.getText().contains("Account details"));
+     }
+-    @Test(priority = 6)
+-    public void US11_TC01_7_AccountSayfasiTeyid() {
+-        Assert.assertTrue(driver.getTitle().contains("hubcomfy"));
++
++    @Test(priority = 20)    // DASHBOARD ALTINDA WISHLIST GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_6_DashboardAltindaWishlistGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaWishlistVarmi.getText().contains("Wishlist"));
+     }
+-}
++
++    @Test(priority = 21)    // DASHBOARD ALTINDA SUPPORT TICKETS GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_7_DashboardAltindaSupport_TicketsGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaSupport_TicketslistVarmi.getText().contains("Support Tickets"));
++    }
+ 
++    @Test(priority = 22)    // DASHBOARD ALTINDA FOLLOWING GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_8_DashboardAltindaFollowingsGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaFollowingslistVarmi.getText().contains("Followings"));
++    }
+ 
++    @Test(priority = 23)    // DASHBOARD ALTINDA LOGOUT GÖRÜNTÜLENEBİLDİ Mİ
++    public void US11_TC03_9_DashboardAltindaLogoutGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.DashboardAltindaLogoutlistVarmi.getText().contains("Logout"));
++    }
++}
+Index: src/test/java/pages/LocaterMuhammedAli.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\n\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\nimport org.openqa.selenium.support.PageFactory;\r\nimport utilities.Driver;\r\n\r\npublic class LocaterMuhammedAli {\r\n    // US11-TC01-Adres erişilebilir olmalıdır\r\n    public LocaterMuhammedAli() {\r\n        PageFactory.initElements(Driver.getDriver(), this);\r\n    }\r\n\r\n    @FindBy(xpath = \"//*[text()='Sign In']\")    // US11-TC01-Buton, aktif olamlı ve istenilen pencereye ulaştırabilmeli\r\n    public WebElement signInButton;\r\n\r\n    //Pencere görüntülenebilmeli\r\n\r\n    //E-mail adresi girilebilmeli\r\n    @FindBy(id = \"username\")\r\n    public WebElement userNameGir;\r\n\r\n    //Şifre girilebilmeli\r\n    @FindBy(id = \"password\")\r\n    public WebElement sifreGir;\r\n\r\n    //Sign in butonu tıklanabilir olmalı\r\n    @FindBy(name = \"login\")\r\n    public WebElement loginOnay;\r\n\r\n    //My account sayfası görüntülenebilmeli\r\n\r\n    //My account sayfasında Orders görüntülenebilmeli\r\n\r\n    //My account sayfasında Downloads görüntülenebilmeli\r\n\r\n    //My account sayfasında address görüntülenebilmeli\r\n\r\n    //My account sayfasında account details görüntülenebilmeli\r\n\r\n    //My account sayfasında whislist görüntülenebilmeli\r\n\r\n    //My account sayfasında Logout görüntülenebilmeli\r\n\r\n    //My account sayfasında, Dashboard altında Store Manager görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında orders görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında downloads görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında address görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında account details görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında wishlist görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında Support tickets görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında followings görüntülenmeli\r\n\r\n    //My account sayfasında, Dashboard altında log out görüntülenmeli\r\n\r\n    //Adress seçeneği tıklanabilir olmalı\r\n\r\n    //Adres sayfası açılmalı\r\n\r\n    //ADD seçeneği tıklanılabilmeli ve Shipping  sayfası açılmalı\r\n\r\n    //First name yazı alanına isim girilebilmeli\r\n\r\n    //Last name yazı alanına isim girilebilmeli\r\n\r\n    //Shipping sayfasındaCountry/Region alanında ülke adı seçilebilmeli\r\n\r\n    //Shipping sayfasında Street address alanına adres girilebilmeli\r\n\r\n    //Shipping sayfasında Street address alanın 2 satırına adresin devamı girilebilmeli\r\n\r\n    //Shipping sayfasında Town / City alanına şehir asmi girilebilmeli\r\n\r\n    //Shipping sayfasında State alanına bilgi girilebilmeli\r\n\r\n    //Shipping sayfasında ZIP Code alanına bilgi girilebilmeli\r\n\r\n    //SAVE ADDRESS butonu tıklanabilir olmalı\r\n\r\n    //SAVE ADRDRESS butonuna tıklandıktan sonra adresin kaydedildiği sonucu görüntülenmeli\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/pages/LocaterMuhammedAli.java b/src/test/java/pages/LocaterMuhammedAli.java
+--- a/src/test/java/pages/LocaterMuhammedAli.java	(revision 9a0f86cd31fe43f0fa4ce3f3fb60e6df592bdd35)
++++ b/src/test/java/pages/LocaterMuhammedAli.java	(date 1684259016554)
+@@ -6,83 +6,82 @@
+ import utilities.Driver;
+ 
+ public class LocaterMuhammedAli {
+-    // US11-TC01-Adres erişilebilir olmalıdır
++
+     public LocaterMuhammedAli() {
+-        PageFactory.initElements(Driver.getDriver(), this);
+-    }
+-
+-    @FindBy(xpath = "//*[text()='Sign In']")    // US11-TC01-Buton, aktif olamlı ve istenilen pencereye ulaştırabilmeli
++// USER STORY 11 --------------------------------------------------------------------------------------------
++    PageFactory.initElements(Driver.getDriver(), this);}   // US11-TC01-Adres erişilebilir olmalıdır
++    @FindBy(xpath = "//*[text()='Sign In']")                    // US11-TC01-Buton, aktif olamlı ve istenilen pencereye ulaştırabilmeli
+     public WebElement signInButton;
+ 
+-    //Pencere görüntülenebilmeli
++                                                                //Pencere görüntülenebilmeli
+ 
+-    //E-mail adresi girilebilmeli
+-    @FindBy(id = "username")
++
++    @FindBy(id = "username")                                    //E-mail adresi girilebilmeli
+     public WebElement userNameGir;
+-
+-    //Şifre girilebilmeli
+-    @FindBy(id = "password")
++    @FindBy(id = "password")                                    //Şifre girilebilmeli
+     public WebElement sifreGir;
+-
+-    //Sign in butonu tıklanabilir olmalı
+-    @FindBy(name = "login")
++    @FindBy(name = "login")                                     //Sign in butonu tıklanabilir olmalı
+     public WebElement loginOnay;
+-
+-    //My account sayfası görüntülenebilmeli
+-
+-    //My account sayfasında Orders görüntülenebilmeli
+-
+-    //My account sayfasında Downloads görüntülenebilmeli
+-
+-    //My account sayfasında address görüntülenebilmeli
+-
+-    //My account sayfasında account details görüntülenebilmeli
+-
+-    //My account sayfasında whislist görüntülenebilmeli
+-
+-    //My account sayfasında Logout görüntülenebilmeli
+-
+-    //My account sayfasında, Dashboard altında Store Manager görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında orders görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında downloads görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında address görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında account details görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında wishlist görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında Support tickets görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında followings görüntülenmeli
+-
+-    //My account sayfasında, Dashboard altında log out görüntülenmeli
++    @FindBy(id = "menu-item-1079")                              //My account sayfası görüntülenebilmeli
++    public WebElement MyAccountTikla;
++    @FindBy(xpath = "(//*[text()='Orders'])[2]")                //My account sayfasında Orders görüntülenebilmeli
++    public WebElement OrdersGorulmeli;
++    @FindBy(xpath = "(//*[text()='Downloads'])[2]")             //My account sayfasında Downloads görüntülenebilmeli
++    public WebElement MyAccount_Download_Gorulmeli;
++    @FindBy(xpath = "(//*[text()='Addresses'])[2]")             //My account sayfasında addresses görüntülenebilmeli
++    public WebElement AddressesVarmi;
++    @FindBy(xpath = "(//*[text()='Account details'])[2]")       //My account sayfasında account details görüntülenebilmeli
++    public WebElement Account_detailsVarmi;
++    @FindBy(xpath = "(//*[text()='Wishlist'])[3]")              //My account sayfasında whislist görüntülenebilmeli
++    public WebElement WishlistVarmi;
++    @FindBy(xpath = "(//*[text()='Logout'])[2]")                //My account sayfasında Logout görüntülenebilmeli
++    public WebElement LogoutVarmi;
++    @FindBy(xpath = "(//*[text()='Store Manager'])[1]")         //My account sayfasında, Dashboard altında Store Manager görüntülenmeli
++    public WebElement DashboardAltindaStore_ManagerVarmi;
++    @FindBy(xpath = "(//*[text()='Orders'])[1]")                //My account sayfasında, Dashboard altında orders görüntülenmeli
++    public WebElement DashboardAltindaOrdersVarmi;
++    @FindBy(xpath = "(//*[text()='Downloads'])[1]")             //My account sayfasında, Dashboard altında downloads görüntülenmeli
++    public WebElement DashboardAltindaDownloadsVarmi;
++    @FindBy(xpath = "(//*[text()='Addresses'])[1]")             //My account sayfasında, Dashboard altında address görüntülenmeli
++    public WebElement DashboardAltindaAddressesVarmi;
++    @FindBy(xpath = "(//*[text()='Account details'])[1]")       //My account sayfasında, Dashboard altında account details görüntülenmeli
++    public WebElement DashboardAltindaAccount_detailsVarmi;
++    @FindBy(xpath = "(//*[text()='Wishlist'])[2]")              //My account sayfasında, Dashboard altında wishlist görüntülenmeli
++    public WebElement DashboardAltindaWishlistVarmi;
++    @FindBy(xpath = "(//*[text()='Support Tickets'])[1]")       //My account sayfasında, Dashboard altında Support tickets görüntülenmeli
++    public WebElement DashboardAltindaSupport_TicketslistVarmi;
++    @FindBy(xpath = "(//*[text()='Followings'])[1]")            //My account sayfasında, Dashboard altında followings görüntülenmeli
++    public WebElement DashboardAltindaFollowingslistVarmi;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                //My account sayfasında, Dashboard altında log out görüntülenmeli
++    public WebElement DashboardAltindaLogoutlistVarmi;
+ 
+-    //Adress seçeneği tıklanabilir olmalı
+ 
+-    //Adres sayfası açılmalı
++// USER STORY 13
+ 
+-    //ADD seçeneği tıklanılabilmeli ve Shipping  sayfası açılmalı
+-
+-    //First name yazı alanına isim girilebilmeli
+-
+-    //Last name yazı alanına isim girilebilmeli
+-
+-    //Shipping sayfasındaCountry/Region alanında ülke adı seçilebilmeli
+-
+-    //Shipping sayfasında Street address alanına adres girilebilmeli
+-
+-    //Shipping sayfasında Street address alanın 2 satırına adresin devamı girilebilmeli
+-
+-    //Shipping sayfasında Town / City alanına şehir asmi girilebilmeli
+-
+-    //Shipping sayfasında State alanına bilgi girilebilmeli
+-
+-    //Shipping sayfasında ZIP Code alanına bilgi girilebilmeli
+-
+-    //SAVE ADDRESS butonu tıklanabilir olmalı
+-
+-    //SAVE ADRDRESS butonuna tıklandıktan sonra adresin kaydedildiği sonucu görüntülenmeli
++    @FindBy(xpath = "(//*[text()='Addresses'])[1]")                //Adress seçeneği tıklanabilir olmalı
++    public WebElement AdresSecenegiTik;
++    @FindBy(xpath = "(//*[text()='Addresses'])[3]")                //Adres sayfası açılmalı
++    public WebElement AdresSayfasiAc;
++    @FindBy(xpath = "//*[text()='Edit Your Shipping Address']")    //ADD seçeneği tıklanılabilmeli ve Shipping  sayfası açılmalı
++    public WebElement ShippingAdresADD_Tikla;
++    @FindBy(id = "shipping_first_name")                            //First name yazı alanına isim girilebilmeli
++    public WebElement FirstNameAlaninaIsimGir;
++    @FindBy(id = "shipping_last_name")                             //Last name yazı alanına isim girilebilmeli
++    public WebElement LastNameAlaninaIsimGir;
++    @FindBy(id = "select2-shipping_country-container")             //Country/Region alanında ülke adı seçilebilmeli
++    public WebElement CountrRegionAlaniUlkeSec;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                   //Street address alanına adres girilebilmeli
++    public WebElement StreatAddressAlaninaAdresGir;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                   //Street address alanın 2 satırına adresin devamı girilebilmeli
++    public WebElement StreatAddress2AlaninaAdresGir;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                   //Town / City alanına şehir asmi girilebilmeli
++    public WebElement TownCityAlaninaSehirGir;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                   //State alanına bilgi girilebilmeli
++    public WebElement StateAlaninaBilgiGir;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                   //ZIP Code alanına bilgi girilebilmeli
++    public WebElement ZipCodeAlaninaBilgiGir;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                   //SAVE ADDRESS butonu tıklanabilir olmalı
++    public WebElement SaveaddressButonuTıkla;
++    @FindBy(xpath = "(//*[text()='Logout'])[1]")                   //SAVE ADRDRESS butonuna tıklandıktan sonra adresin kaydedildiği sonucu görüntülenmeli
++    public WebElement KayitliSayfaGoruntule;
+ }
+\ No newline at end of file
+Index: src/test/java/test/US13_MuhammedAli.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/test/US13_MuhammedAli.java b/src/test/java/test/US13_MuhammedAli.java
+new file mode 100644
+--- /dev/null	(date 1684259198771)
++++ b/src/test/java/test/US13_MuhammedAli.java	(date 1684259198771)
+@@ -0,0 +1,115 @@
++package test;
++
++import org.openqa.selenium.*;
++import org.openqa.selenium.support.ui.Select;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++import pages.LocaterMuhammedAli;
++import utilities.ConfigReader;
++import utilities.Driver;
++
++import java.util.List;
++
++public class US13_MuhammedAli {
++    WebDriver driver;
++
++    @Test(priority = 24)     // WEB SİTESİNE GİT
++    public void ____Web_Sitesine_Giris() throws InterruptedException {
++        driver = Driver.getDriver();
++        driver.get(ConfigReader.getProperty("url"));                            // Web sitesine git.
++
++        LocaterMuhammedAli giris = new LocaterMuhammedAli();
++        giris.signInButton.click();                                             // Sign In butonunu tıkla
++        giris.userNameGir.sendKeys(ConfigReader.getProperty("userNameV"));      // Kullanıcı adını gir
++        giris.sifreGir.sendKeys(ConfigReader.getProperty("passwordV"));         // Şifreyi gir
++        giris.loginOnay.click();                                                // Sign Butonuna tıkla
++
++        // Sayfanın en altına git
++        JavascriptExecutor js = (JavascriptExecutor) driver;
++        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
++        Thread.sleep(5000);                                               //  5 saniye bekleyecek
++        giris.MyAccountTikla.click();                                           // My Account sayfasını aç
++    }
++    @Test(priority = 25)     // MY ACCOUNT SAYFASINDAKİ ADDRESSES SEÇENEĞİ TIKLANMALI
++    public void US13_TC01_01_AdresSecenegiTiklanmali() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        LogIn.AdresSecenegiTik.click();
++    }
++
++    @Test(priority = 26)     // ADDRESSES SAYFASI AÇILMALI
++    public void US13_TC01_02_AdresSayfasiAcilmali() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.AdresSayfasiAc.getText().contains("Addresses"));
++    }
++
++    @Test(priority = 27)     // SHIPPING ADRESS ALTINDAKİ ADD TIKLANLI
++    public void US13_TC01_03_ShippingAdresADD_Tiklanmali() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        LogIn.ShippingAdresADD_Tikla.click();
++    }
++
++    @Test(priority = 28)     // FIRST NAME ALANINA İSİM GİRİLMELİ
++    public void US13_TC01_04_FirstNameAlaninaIsimGirilmeli() {
++        LocaterMuhammedAli isim = new LocaterMuhammedAli();
++        isim.FirstNameAlaninaIsimGir.clear();
++        isim.FirstNameAlaninaIsimGir.sendKeys(ConfigReader.getProperty("isim"));
++    }
++
++    @Test(priority = 29)     // LAST NAME ALANINA SOYİSİM GİRİLMELİ
++    public void US13_TC01_05_LastNameAlaninaIsimGirilmeli() {
++        LocaterMuhammedAli soyisim = new LocaterMuhammedAli();
++        soyisim.LastNameAlaninaIsimGir.clear();
++        soyisim.LastNameAlaninaIsimGir.sendKeys(ConfigReader.getProperty("soyad"));
++    }
++
++    @Test(priority = 30)     // COUNTRY REGION ALANINA ÜLKE İSMİ SEÇİLMELİ
++    public void US13_TC01_06_CountryRegionAlaniUlkeSecilmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        LogIn.CountrRegionAlaniUlkeSec.click();
++        LogIn.FirstNameAlaninaIsimGir.sendKeys("Uganda" + Keys.ENTER);
++    }
++
++    @Test(priority = 31)     // STREET ADDRESS ALANINA ADRES GİRLMELİ
++    public void US13_TC01_07_StreatAddressAlaninaAdresGirilmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.StreatAddressAlaninaAdresGir.getText().contains("x"));
++    }
++
++    @Test(priority = 32)     // STREET ADDRESS 2 ALANINA ADRESİN DEVAMI GİRİLMELİ
++    public void US13_TC01_08_StreatAddress2AlaninaAdresGirilmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.StreatAddress2AlaninaAdresGir.getText().contains("x"));
++    }
++
++    @Test(priority = 33)     // TOWN ŞEHİR ALANINA ŞEHİR İSMİ GİRİLMELİ
++    public void US13_TC01_09_TownCityAlaninaSehirGirilmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.TownCityAlaninaSehirGir.getText().contains("x"));
++    }
++
++    @Test(priority = 34)     // STATE ALANINA BİLGİ GİRİLMELİ
++    public void US13_TC01_10_StateAlaninaBilgiGirilmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.StateAlaninaBilgiGir.getText().contains("x"));
++    }
++
++    @Test(priority = 35)     // ZIP CODE ALANINA BİLGİ GİRİLMELİ
++    public void US13_TC01_11_ZipCodeAlaninaBilgiGirilmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.ZipCodeAlaninaBilgiGir.getText().contains("x"));
++    }
++
++    @Test(priority = 36)     // SAVE ADDRESS ALANINA TIKLANMALI
++    public void US13_TC02_01_SaveaddressButonuTıklanmali() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.SaveaddressButonuTıkla.getText().contains("x"));
++    }
++
++    @Test(priority = 37)     // KAYDEDİLEN SAYFA GÖRÜNTÜLENMELİ
++    public void US13_TC02_02_KayitliSayfaGoruntulenmeli() {
++        LocaterMuhammedAli LogIn = new LocaterMuhammedAli();
++        Assert.assertTrue(LogIn.KayitliSayfaGoruntule.getText().contains("x"));
++    }
++
++
++}
+\ No newline at end of file
+Index: Configuration.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>browser=chrome\r\nurl=https://hubcomfy.com/\r\nuserNameV=Ali.123\r\npasswordV=Mayis.2023
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/Configuration.properties b/Configuration.properties
+--- a/Configuration.properties	(revision 9a0f86cd31fe43f0fa4ce3f3fb60e6df592bdd35)
++++ b/Configuration.properties	(date 1684257061625)
+@@ -1,4 +1,141 @@
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+ browser=chrome
+ url=https://hubcomfy.com/
+-userNameV=Ali.123
+-passwordV=Mayis.2023
+\ No newline at end of file
++userNameV=kellan.saurav@fullangle.org
++passwordV=GecerliSifre-2023
++isim=Kemal
++soyad=SUNAL
++ulke=uganda
+\ No newline at end of file
