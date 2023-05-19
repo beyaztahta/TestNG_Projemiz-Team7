@@ -127,9 +127,6 @@ public class Elif_US14_TC01_TC02_TC03 {
         //Kullanıcı urun resmının basarıyla yuklandıgını dogrular
         System.out.println("File Uploaded Successfully");
         Driver.closeDriver();
-
-
-
     }
 
     @Test
