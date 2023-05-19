@@ -45,7 +45,7 @@ public class US07_CompareTest {
         softAssert.assertTrue(locaterAli.compareList.getText().contains("0 Products"));
     }
     @Test(dependsOnMethods = "testCompare")
-    public void testUrunlerinTamaminiSilebilmeli() {
+    public void testUrunlerininTamaminiSilebilmeli() {
         ReusableMethods.click(locaterAli.clearAll);
         ReusableMethods.bekle(3);
         Assert.assertTrue(locaterAli.compareList.getText().contains("0 Products"));
