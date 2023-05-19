@@ -27,7 +27,7 @@ public class US18_AddProduct_Test extends ReusableMethods {
     public void addProduct() {
 
         Driver.getDriver().get(ConfigReader.getProperty("url"));
-        locaterAli.signInButton.click();
+        locaterAli.signInButton.click();//
         locaterAli.userNameTexti.sendKeys(ConfigReader.getProperty("userNameV"),
                 Keys.TAB, ConfigReader.getProperty("passwordV"), Keys.ENTER);
         Assert.assertTrue(locaterAli.signInButton.isDisplayed());
