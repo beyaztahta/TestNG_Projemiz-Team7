@@ -22,6 +22,8 @@ public class LocaterMali {
 
     @FindBy(xpath = "//a[text()='Store Manager']")
     public WebElement storeManagerButton;
+    @FindBy(xpath = "//h2[text()='Store Manager']")
+    public WebElement storeManagerTitle;
 
    @FindBy(xpath = "(//span[@class='wcfmfa fa-cube'])[1]")
    public WebElement productButton;
@@ -65,6 +67,8 @@ public class LocaterMali {
 
     @FindBy(id = "description_ifr")
     public WebElement descriptionIF;
+   @FindBy(id = "excerpt_ifr")
+    public WebElement shortdescriptionIF;
 
     @FindBy(xpath = "//body[@data-id='description']")
     public WebElement description;
@@ -119,6 +123,28 @@ public class LocaterMali {
  public WebElement addNewColorButton;
  @FindBy(xpath = "(//button[text()='Add New'])[2]")
  public WebElement addNewSizeButton;
+ @FindBy(xpath = "//div[text()='Variations']")
+ public WebElement variationButton;
+
+ @FindBy(xpath = "(//select[@class='wcfm-select wcfm_ele wcfm_half_ele default_attribute_ele attribute_ele variable attribute_ele_old'])[1]")
+ public WebElement variationColor;
+ @FindBy(xpath = "(//select[@class='wcfm-select wcfm_ele wcfm_half_ele default_attribute_ele attribute_ele variable attribute_ele_old'])[2]")
+ public WebElement variationsize;
+
+ @FindBy(xpath = "//input[@value=\"446\"]")
+ public WebElement checkBoxAdidas;
+ @FindBy(xpath = " //input[@value=\"298\"]\n")
+ public WebElement checkboxApple;
+ @FindBy(xpath = "//input[@value=\"519\"]")
+ public WebElement checkboxElektronik;
+
+ @FindBy(xpath = "//*[@id=\"wcfm-products\"]/tbody/tr[1]/td[12]/a[2]")
+ public WebElement viewButton;
+ @FindBy(xpath = "//h1[@class='product_title entry-title']")
+ public WebElement publishedTitle;
+
+
+
 
 
 
