@@ -332,5 +332,7 @@ email
 
 //*[@class='quantity-plus w-icon-plus']//plus arti ekleme
 
+    //burasi locateler sayfasi
+
 }
 
