@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterMuhammedAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterMuhammedAli.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US11_MuhammedAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US11_MuhammedAli.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US13_MuhammedAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US13_MuhammedAli.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US13_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US13_MuhammedAli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +39,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Selenium Dosyaları/TESTNGPROJE/TestNG_Projemiz-Team7",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Selenium Dosyaları/TESTNGPROJE/TestNG_Projemiz-Team7&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Selenium Dosyaları\TESTNGPROJE\TestNG_Projemiz-Team7\src\test\java\test" />
@@ -73,7 +59,24 @@
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.US13_MuhammedAli">
+  <component name="RunManager" selected="TestNG.US11">
+    <configuration name="US11" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestNG_Projemiz-Team7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.US11" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="US11_MuhammedAli" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestNG_Projemiz-Team7" />
       <extension name="coverage">
@@ -143,31 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US20_Coupons_PositiveTest.testaddNewCoupons" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US20_Coupons_PositiveTest" />
-      <option name="METHOD_NAME" value="testaddNewCoupons" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.US11" />
         <item itemvalue="TestNG.US13_MuhammedAli" />
         <item itemvalue="TestNG.US11_MuhammedAli" />
         <item itemvalue="TestNG.US18_AddProduct_Test.addProduct" />
         <item itemvalue="TestNG.US20_Coupons_NegativeTest" />
-        <item itemvalue="TestNG.US20_Coupons_PositiveTest.testaddNewCoupons" />
       </list>
     </recent_temporary>
   </component>
