@@ -13,51 +13,44 @@ import utilities.Driver;
 import utilities.ExcelUtils;
 import utilities.ReusableMethods;
 
-public class US20_Coupons_NegativeTest {
+public class US20_Coupons_NegativeTest extends ReusableMethods {
 
 
     @DataProvider
     public static Object[][] test01() {
-        ExcelUtils excelUtils = new ExcelUtils("src/test/java/resources/coupons.xlsx","Sayfa1");
+        ExcelUtils excelUtils = new ExcelUtils("src/test/java/resources/coupons.xlsx", "Sayfa1");
         return excelUtils.getDataArrayWithoutFirstRow();
     }
 
     @Test(dataProvider = "test01")
-    public void testaddNewCoupons(String code,String desc,String amaount,String date) {
+    public void testaddNewCoupons(String code, String desc, String amaount, String date) {
         LocaterAli locaterAli = new LocaterAli();
         Driver.getDriver().get(ConfigReader.getProperty("url"));
         locaterAli.signInButton.click();
         locaterAli.userNameTexti.sendKeys(ConfigReader.getProperty("userNameV"),
                 Keys.TAB, ConfigReader.getProperty("passwordV"), Keys.ENTER);
         Assert.assertTrue(locaterAli.signInButton.isDisplayed());
-
         locaterAli.signOut.click();
-
         locaterAli.storeManager.click();
         Assert.assertTrue(locaterAli.couponsButton.isDisplayed());
-        ReusableMethods.click(locaterAli.couponsButton);
-        ReusableMethods.click(locaterAli.addNewButton);
-
-        //Code yazabilmeliyim & Description yazılabilmeli
-        locaterAli.codeTexti.sendKeys(code,Keys.TAB,desc);
-
-        //Coupon Amount yazılabilmeli
+        click(locaterAli.couponsButton);
+        click(locaterAli.addNewButton);
+        locaterAli.codeTexti.sendKeys(code, Keys.TAB, desc);
         locaterAli.coupon_amounTexti.clear();
         locaterAli.coupon_amounTexti.sendKeys(amaount);
-
-        //Coupon expiry date girilebilmeli
-        locaterAli.expiry_dateTexti.sendKeys(date,Keys.ESCAPE);
-
-        //Discount Type; Percentage discount veya Fixed Product Discount olarak seçilebilmeli
+        locaterAli.expiry_dateTexti.sendKeys(date, Keys.ESCAPE);
         Select select = new Select(locaterAli.discount_typeDDM);
         select.selectByIndex(1);
-        ReusableMethods.click(locaterAli.free_shippingRadioButton);
-        ReusableMethods.click(locaterAli.show_on_storeRadioButton);
-        ReusableMethods.click(locaterAli.submitButton);
-
-        ReusableMethods.click(locaterAli.couponsButton);
-       ReusableMethods.webElementResmi(locaterAli.coupons);
-       ReusableMethods.bekle(3);
+        click(locaterAli.free_shippingRadioButton);
+        click(locaterAli.show_on_storeRadioButton);
+        click(locaterAli.submitButton);
+        click(locaterAli.signOut);
+        click(locaterAli.storeManager);
+        click(locaterAli.couponsButton);
+        scroll(locaterAli.refundButton);
+        tumSayfaResmi("hatali kuponlar");
+        webElementResmi(locaterAli.coupons);
+        bekle(3);
         Driver.closeDriver();
     }
 }

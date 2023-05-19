@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="" />
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -103,6 +104,53 @@
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test" />
     </key>
   </component>
+  <component name="RunManager" selected="TestNG.US18_AddProduct_Test"/>
+    <configuration name="US18_AddProduct_Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US18_AddProduct_Test.addProduct02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct02" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US18_AddProduct_Test.addProduct04" type="TestNG" temporary="true" nameIsGenerated="true"/>
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct04" />
   <component name="RunManager" selected="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05">
     <configuration name="Elif_US14_TC01_TC02_TC03.testCase03" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
@@ -122,6 +170,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="US18_AddProduct_Test.addProduct05" type="TestNG" temporary="true" nameIsGenerated="true"/>
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct05" />
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.test04" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
@@ -140,6 +199,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="US18_AddProduct_Test.testCase02" type="TestNG" temporary="true" nameIsGenerated="true"/>
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="testCase02" />
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testCase05" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
@@ -196,6 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.US18_AddProduct_Test" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct02" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.testCase02" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct05" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct04" />
         <item itemvalue="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05" />
         <item itemvalue="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase07" />
         <item itemvalue="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testcase06" />
