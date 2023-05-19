@@ -8,7 +8,7 @@ import utilities.Driver;
 public class LocaterAyse {
 
 
-=======
+
 public LocaterAyse(){
     PageFactory.initElements(Driver.getDriver(),this);
 
