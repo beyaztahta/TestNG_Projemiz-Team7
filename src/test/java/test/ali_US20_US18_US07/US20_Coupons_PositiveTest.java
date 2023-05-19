@@ -9,7 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US20_Coupons_PositiveTest {
+public class US20_Coupons_PositiveTest extends ReusableMethods {
 
 
     @Test
@@ -20,28 +20,23 @@ public class US20_Coupons_PositiveTest {
         locaterAli.userNameTexti.sendKeys(ConfigReader.getProperty("userNameV"),
                 Keys.TAB, ConfigReader.getProperty("passwordV"), Keys.ENTER);
         Assert.assertTrue(locaterAli.signInButton.isDisplayed());
-
         locaterAli.signOut.click();
-
         locaterAli.storeManager.click();
         Assert.assertTrue(locaterAli.couponsButton.isDisplayed());
-        ReusableMethods.click(locaterAli.couponsButton);
-        ReusableMethods.click(locaterAli.addNewButton);
-
-        locaterAli.codeTexti.sendKeys("ABC1234",Keys.TAB,"Indirim Kuponu");
+        click(locaterAli.couponsButton);
+        click(locaterAli.addNewButton);
+        locaterAli.codeTexti.sendKeys("ABC1234", Keys.TAB, "Indirim Kuponu");
         Select select = new Select(locaterAli.discount_typeDDM);
         select.selectByIndex(1);
         locaterAli.coupon_amounTexti.clear();
         locaterAli.coupon_amounTexti.sendKeys("5");
-        locaterAli.expiry_dateTexti.sendKeys("2023-05-17",Keys.ESCAPE);
-        ReusableMethods.click(locaterAli.free_shippingRadioButton);
-        ReusableMethods.click(locaterAli.show_on_storeRadioButton);
-
-        ReusableMethods.click(locaterAli.submitButton);
-        Assert.assertEquals(locaterAli.verifyMessage.getText(),"Coupon Successfully Published.");
+        locaterAli.expiry_dateTexti.sendKeys("2023-05-17", Keys.ESCAPE);
+        click(locaterAli.free_shippingRadioButton);
+        click(locaterAli.show_on_storeRadioButton);
+        click(locaterAli.submitButton);
+        Assert.assertEquals(locaterAli.verifyMessage.getText(), "Coupon Successfully Published.");
 
     }
-
 
 
 }
