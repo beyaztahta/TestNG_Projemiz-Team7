@@ -75,9 +75,9 @@ public class LocaterSerap {
 
 
 
-    //(//*[@type='checkbox'])[1]
 
-    //*[@id='register-policy']
+
+
 
     @FindBy(xpath = "//*[@id='\"header\"]/div/div/div/div/div/div/[9]/div/div/a[1]/span")//register
     public WebElement registerPolicy2;
