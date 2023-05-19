@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_02_35_56_14052023Compare Page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterAli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US07_CompareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US07_CompareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US18_AddProduct_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US18_AddProduct_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterSevcan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterSevcan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Class1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Class1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +69,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\resources" />
@@ -57,26 +86,8 @@
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.US18_AddProduct_Test.addProduct">
-    <configuration name="US07_CompareTest.testCompare" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US07_CompareTest" />
-      <option name="METHOD_NAME" value="testCompare" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="US18_AddProduct_Test.addProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.US18_AddProduct_Test">
+    <configuration name="US18_AddProduct_Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -86,24 +97,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
       <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
-      <option name="METHOD_NAME" value="addProduct" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="US20_Coupons_NegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US20_Coupons_NegativeTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -111,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US20_Coupons_NegativeTest.testaddNewCoupons" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="US18_AddProduct_Test.addProduct02" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +113,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US20_Coupons_NegativeTest" />
-      <option name="METHOD_NAME" value="testaddNewCoupons" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct02" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -129,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US20_Coupons_PositiveTest.testaddNewCoupons" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="US18_AddProduct_Test.addProduct04" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -137,9 +130,45 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US20_Coupons_PositiveTest" />
-      <option name="METHOD_NAME" value="testaddNewCoupons" />
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct04" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US18_AddProduct_Test.addProduct05" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct05" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US18_AddProduct_Test.testCase02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="testCase02" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -149,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct" />
-        <item itemvalue="TestNG.US20_Coupons_NegativeTest" />
-        <item itemvalue="TestNG.US20_Coupons_PositiveTest.testaddNewCoupons" />
-        <item itemvalue="TestNG.US20_Coupons_NegativeTest.testaddNewCoupons" />
-        <item itemvalue="TestNG.US07_CompareTest.testCompare" />
+        <item itemvalue="TestNG.US18_AddProduct_Test" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct02" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.testCase02" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct05" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct04" />
       </list>
     </recent_temporary>
   </component>
