@@ -58,9 +58,7 @@ public class TC01 {
         js.executeScript("arguments[0].click();",serap.AccountDetails);
         ReusableMethods.bekle(3);
         assertTrue(serap.verifyAccountDetailsProfile.isDisplayed());
-
     }
-
     @AfterClass
     public void afterClass() {
         ReusableMethods.bekle(5);
