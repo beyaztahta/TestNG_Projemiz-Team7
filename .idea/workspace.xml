@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/US16_testSet1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/US16_testSet2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/US17_testSet1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/US17_testSet1_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ReportMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2023_00_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2023_00_17__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterMali.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterMali.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterMuhammedAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterMuhammedAli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US11_MuhammedAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US11_MuhammedAli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US13_MuhammedAli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US13_MuhammedAli.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US13_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US13_MuhammedAli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +53,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Selenium Dosyaları/TESTNGPROJE/TestNG_Projemiz-Team7",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Selenium Dosyaları\TESTNGPROJE\TestNG_Projemiz-Team7\src\test\java\test" />

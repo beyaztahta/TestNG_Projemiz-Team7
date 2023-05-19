@@ -9,7 +9,8 @@ public class LocaterMuhammedAli {
 
     public LocaterMuhammedAli() {
 // USER STORY 11 --------------------------------------------------------------------------------------------
-    PageFactory.initElements(Driver.getDriver(), this);}   // US11-TC01-Adres erişilebilir olmalıdır
+    PageFactory.initElements(Driver.getDriver(), this);}   // US11-TC01-Adres erişilebilir olmalıdır.
+
     @FindBy(xpath = "//*[text()='Sign In']")                    // US11-TC01-Buton, aktif olamlı ve istenilen pencereye ulaştırabilmeli
     public WebElement signInButton;
 
