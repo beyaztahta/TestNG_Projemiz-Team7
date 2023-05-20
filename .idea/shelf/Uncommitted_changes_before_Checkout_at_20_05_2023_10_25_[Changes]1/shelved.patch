@@ -1,0 +1,259 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"80eaa971-04f3-4161-87d8-e04749e73aeb\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/pages/CustomerRegisterLocates.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US01.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US10.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Configuration.properties\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Configuration.properties\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/pages/LocaterSevcan.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/test/US01.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/test/US02.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US02.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/test/US10.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/LocaterSevcan.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/Class1.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/Class1.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US01.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US02.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US10.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_01.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_01.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_02.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_02.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_03.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_03.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_04.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_04.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_05.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_05.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_06.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_06.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_07.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_07.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_08.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/US_15/TC_08.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/utilities/Driver.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/utilities/Driver.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Pho9df38g6a2gZU4wqMXKOb2O0\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\ASUS\\IdeaProjects\\TestNG_Projemiz-Team7\\src\\test\\java\\resources\" />\r\n      <recent name=\"C:\\Users\\ASUS\\IdeaProjects\\TestNG_Projemiz-Team7\\src\\test\\java\\utilities\" />\r\n      <recent name=\"C:\\Users\\ASUS\\IdeaProjects\\TestNG_Projemiz-Team7\\src\\test\\java\\pages\" />\r\n      <recent name=\"C:\\Users\\ASUS\\IdeaProjects\\TestNG_Projemiz-Team7\\src\\test\\java\\test\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.US01\">\r\n    <configuration name=\"US01\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Deneme123\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"test.US01_US02_US10_Sevcan.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"test.US01_US02_US10_Sevcan\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.US01_US02_US10_Sevcan.US01\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"US10\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Deneme123\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"test.US01_US02_US10_Sevcan.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.US01_US02_US10_Sevcan.US10\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"US10.good\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Deneme123\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"test.US01_US02_US10_Sevcan.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.US01_US02_US10_Sevcan.US10\" />\r\n      <option name=\"METHOD_NAME\" value=\"good\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"US10.strong\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Deneme123\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"test.US01_US02_US10_Sevcan.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.US01_US02_US10_Sevcan.US10\" />\r\n      <option name=\"METHOD_NAME\" value=\"strong\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"US10.weak\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Deneme123\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"test.US01_US02_US10_Sevcan.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.US01_US02_US10_Sevcan.US10\" />\r\n      <option name=\"METHOD_NAME\" value=\"weak\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.US01\" />\r\n        <item itemvalue=\"TestNG.US10\" />\r\n        <item itemvalue=\"TestNG.US10.strong\" />\r\n        <item itemvalue=\"TestNG.US10.good\" />\r\n        <item itemvalue=\"TestNG.US10.weak\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"80eaa971-04f3-4161-87d8-e04749e73aeb\" name=\"Changes\" comment=\"\" />\r\n      <created>1683918523706</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1683918523706</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,53 +5,71 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CustomerRegisterLocates.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US01.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US10.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterSevcan.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US02.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US10.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterSevcan.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Class1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Class1.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US01.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US02.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US10.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_01.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_02.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_03.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_03.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_04.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_05.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_05.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_06.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_06.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_07.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_07.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_08.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_08.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_01_18_47_13052023_US11_LoginResmi.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_01_24_21_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_01_27_49_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_01_30_39_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_01_40_55_18052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_02_30_38_14052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_02_35_56_14052023Compare Page.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_03_36_55_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_03_37_45_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_03_39_38_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_03_40_16_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_03_40_59_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_03_41_47_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_03_43_22_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_04_34_17_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_04_34_31_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_04_34_44_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_00_17_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_01_20_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_02_00_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_03_39_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_04_15_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_04_40_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_08_08_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_08_18_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_09_28_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_09_38_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_09_48_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_09_58_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_16_06_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_16_16_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_16_26_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_16_35_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_07_50_58_16052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_33_43_13052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_33_55_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_34_30_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_35_25_17052023bir karakter harf girildiğinde resiter olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_36_02_13052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_37_26_17052023sayi girildiğinde register olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_37_30_13052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_38_01_17052023sayi girildiğinde register olmamalı.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_44_40_13052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_11_53_44_17052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_12_47_54_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_12_50_24_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_12_55_05_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_12_56_24_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_12_57_22_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/webElementScreenshot_01_43_01_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/webElementScreenshot_01_44_27_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/webElementScreenshot_01_46_15_18052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/webElementScreenshot_03_32_56_17052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/webElementScreenshot_03_33_51_17052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/webElementScreenshot_03_46_16_17052023.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CustomerRegisterLocates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CustomerRegisterLocates.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US01.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US02.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US10.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/Screenshots/emaileSadeceKarakterGirilirse20230518043444.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/CustomerRegisterLocates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/CustomerRegisterLocates.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US01_US02_US10_Sevcan/US01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US01_US02_US10_Sevcan/US01.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US01_US02_US10_Sevcan/US02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US01_US02_US10_Sevcan/US02.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US01_US02_US10_Sevcan/US10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US01_US02_US10_Sevcan/US10.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -89,12 +107,17 @@
+   &quot;keyToString&quot;: {
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/TestNG_Projemiz-Team7/src/test/java/pages&quot;,
+     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\pages" />
++      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test\US01_US02_US10_Sevcan" />
++    </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\resources" />
+       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\utilities" />
+@@ -102,7 +125,7 @@
+       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.US01">
++  <component name="RunManager" selected="TestNG.US10">
+     <configuration name="US01" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Deneme123" />
+       <extension name="coverage">
+@@ -120,7 +143,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="US10" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="US01.TC_4" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Deneme123" />
+       <extension name="coverage">
+         <pattern>
+@@ -128,16 +151,17 @@
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="test" />
+-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
+-      <option name="TEST_OBJECT" value="CLASS" />
++      <option name="PACKAGE_NAME" value="test.US01_US02_US10_Sevcan" />
++      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US01" />
++      <option name="METHOD_NAME" value="TC_4" />
++      <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="US10.good" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="US01.TC_5" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Deneme123" />
+       <extension name="coverage">
+         <pattern>
+@@ -145,9 +169,9 @@
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="test" />
+-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
+-      <option name="METHOD_NAME" value="good" />
++      <option name="PACKAGE_NAME" value="test.US01_US02_US10_Sevcan" />
++      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US01" />
++      <option name="METHOD_NAME" value="TC_5" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -155,7 +179,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="US10.strong" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="US02" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Deneme123" />
+       <extension name="coverage">
+         <pattern>
+@@ -163,17 +187,16 @@
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="test" />
+-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
+-      <option name="METHOD_NAME" value="strong" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="PACKAGE_NAME" value="test.US01_US02_US10_Sevcan" />
++      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US02" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="US10.weak" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="US10" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Deneme123" />
+       <extension name="coverage">
+         <pattern>
+@@ -181,10 +204,9 @@
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="test" />
++      <option name="PACKAGE_NAME" value="test.US01_US02_US10_Sevcan" />
+       <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
+-      <option name="METHOD_NAME" value="weak" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+       <method v="2">
+@@ -193,11 +215,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.US01" />
+         <item itemvalue="TestNG.US10" />
+-        <item itemvalue="TestNG.US10.strong" />
+-        <item itemvalue="TestNG.US10.good" />
+-        <item itemvalue="TestNG.US10.weak" />
++        <item itemvalue="TestNG.US02" />
++        <item itemvalue="TestNG.US01" />
++        <item itemvalue="TestNG.US01.TC_5" />
++        <item itemvalue="TestNG.US01.TC_4" />
+       </list>
+     </recent_temporary>
+   </component>
