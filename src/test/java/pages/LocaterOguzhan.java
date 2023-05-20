@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class LocaterOguzhan {
-<<<<<<< HEAD
     public LocaterOguzhan() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -55,7 +54,7 @@ public class LocaterOguzhan {
     public WebElement errorText;
     @FindBy(xpath = "//*[text()='Email verification code invalid.']")
     public WebElement emailVerificationCodeError;
-=======
+
 
     public LocaterOguzhan(){
         PageFactory.initElements(Driver.getDriver(), this);
@@ -164,5 +163,5 @@ public class LocaterOguzhan {
 
 
 
->>>>>>> master
+
 }
