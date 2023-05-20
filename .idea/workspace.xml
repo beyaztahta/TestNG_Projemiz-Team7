@@ -5,6 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
+
+
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterOguzhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterOguzhan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US08_Oguzhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US08_Oguzhan.java" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US17_testSet1_2.java" beforeDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
@@ -106,6 +116,9 @@
   </component>
   <component name="RunManager" selected="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05">
     <configuration name="Elif_US14_TC01_TC02_TC03.testCase03" type="TestNG" temporary="true" nameIsGenerated="true">
+
+  <component name="RunManager" selected="TestNG.US11_MuhammedAli">
+    <configuration name="US11_MuhammedAli" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -117,6 +130,22 @@
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC01_TC02_TC03" />
       <option name="METHOD_NAME" value="testCase03" />
       <option name="TEST_OBJECT" value="METHOD" />
+
+      <option name="MAIN_CLASS_NAME" value="test.US11_MuhammedAli" />
+
+  <component name="RunManager" selected="TestNG.US18_AddProduct_Test"/>
+    <configuration name="US18_AddProduct_Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -124,6 +153,11 @@
       </method>
     </configuration>
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.test04" type="TestNG" temporary="true" nameIsGenerated="true">
+
+    <configuration name="US16_testSet2" type="TestNG" temporary="true" nameIsGenerated="true">
+
+    <configuration name="US18_AddProduct_Test.addProduct02" type="TestNG" temporary="true" nameIsGenerated="true">
+
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -152,6 +186,12 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
       <option name="METHOD_NAME" value="testCase05" />
+
+      <option name="MAIN_CLASS_NAME" value="test.US16_testSet2" />
+      <option name="METHOD_NAME" value="signIn" />
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct02" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -160,6 +200,21 @@
       </method>
     </configuration>
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testCase07" type="TestNG" temporary="true" nameIsGenerated="true">
+
+    <configuration name="US17_testSet1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="US18_AddProduct_Test.addProduct04" type="TestNG" temporary="true" nameIsGenerated="true"/>
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct04" />
+  <component name="RunManager" selected="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05">
+    <configuration name="Elif_US14_TC01_TC02_TC03.testCase03" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -170,6 +225,11 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
       <option name="METHOD_NAME" value="testCase07" />
+      <option name="MAIN_CLASS_NAME" value="test.US17_testSet1" />
+      <option name="TEST_OBJECT" value="CLASS" />
+
+      <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC01_TC02_TC03" />
+      <option name="METHOD_NAME" value="testCase03" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -178,6 +238,21 @@
       </method>
     </configuration>
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testcase06" type="TestNG" temporary="true" nameIsGenerated="true">
+
+    <configuration name="US17_testSet1_2" type="TestNG" temporary="true" nameIsGenerated="true">
+
+    <configuration name="US18_AddProduct_Test.addProduct05" type="TestNG" temporary="true" nameIsGenerated="true"/>
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
+      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
+      <option name="METHOD_NAME" value="addProduct05" />
+    <configuration name="Elif_US14_TC04_TC05_TC06_TC07.test04" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -186,6 +261,10 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
+
+      <option name="MAIN_CLASS_NAME" value="test.US17_testSet1_2" />
+      <option name="TEST_OBJECT" value="CLASS" />
+
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
       <option name="METHOD_NAME" value="testcase06" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -213,6 +292,18 @@
     </configuration>
     <configuration name="US18_AddProduct_Test.testCase02" type="TestNG" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="CLASS" />
+    <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testcase06" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
+      <option name="METHOD_NAME" value="testcase06" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -222,6 +313,15 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.US17_testSet1_2" />
+
+        <item itemvalue="TestNG.US11_MuhammedAli" />
+        <item itemvalue="TestNG.US17_testSet1_2" />
+        <item itemvalue="TestNG.US16_testSet2.signIn" />
+        <item itemvalue="TestNG.US16_testSet2" />
+        <item itemvalue="TestNG.US17_testSet1" />
+
+        <item itemvalue="TestNG.US18_AddProduct_Test" />
+        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct02" />
         <item itemvalue="TestNG.US18_AddProduct_Test.testCase02" />
         <item itemvalue="TestNG.US18_AddProduct_Test.addProduct05" />
         <item itemvalue="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05" />
