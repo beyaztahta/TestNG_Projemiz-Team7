@@ -11,23 +11,41 @@ import utilities.ReportMethods;
 import utilities.ReusableMethods;
 
 import static utilities.ReusableMethods.bekle;
+import static utilities.ReusableMethods.tumSayfaResmi;
 
 public class US02 extends ReportMethods {
 
         @Test
         public void kayitliKullaniciKayitYapamamali() {
-            Driver.getDriver().get(ConfigReader.getProperty("url"));
-            CustomerRegisterLocates locaterSevcan = new CustomerRegisterLocates();
-            locaterSevcan.Register_Button.click();
-            locaterSevcan.User_Name_Input.sendKeys(
+            CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
+            extentTest = extentReports.createTest("US-02", "Test Raporu");
+
+            Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
+            extentTest.info("https://hubcomfy.com/ adresine gidildi");
+
+            customerRegesterPage.Register_Button.click();
+            extentTest.info("Resgister butonu tıklandı");
+
+            customerRegesterPage.User_Name_Input.sendKeys(
                     ConfigReader.getProperty("username"), Keys.TAB,
                     ConfigReader.getProperty("email"), Keys.TAB,
                     ConfigReader.getProperty("password"));
-            locaterSevcan.Register_Policy_Check.click();
-            locaterSevcan.Singup_Button.click();
-            Assert.assertTrue(locaterSevcan.emailHataMesaji.isDisplayed());
+            extentTest.info("username, email ve password girildi");
+
+            customerRegesterPage.Register_Policy_Check.click();
+            extentTest.info("checkbox tıklandı");
+
+            customerRegesterPage.Singup_Button.click();
+            extentTest.info("signup butonu tıklandı");
+
+            Assert.assertTrue(customerRegesterPage.emailHataMesaji.isDisplayed());
+            extentTest.info("hata mesajı görüntülendi");
             bekle(3);
+
             ReusableMethods.tumSayfaResmi();
+            extentTest.info("tüm sayfa resmi alındı");
+            bekle(3);
+
             Driver.closeDriver();
 
         }

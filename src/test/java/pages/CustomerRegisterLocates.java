@@ -35,11 +35,16 @@ public class CustomerRegisterLocates {
     @FindBy(xpath = "//*[@id='signup']/form/button")
     public WebElement Singup_Button;
 
-    @FindBy(xpath = "//*[@id='header']/div/div/div/div/div/div[9]/div/div/a")
+    @FindBy(id = "e9b716e")
     public WebElement Profile;
 
-    @FindBy(xpath = "//*[@id='main']/div/div/div/div/div/div/nav/ul/li[10]/a")
-    public WebElement Sing_Out;
+    @FindBy(xpath = "//span[text()='Sign Out']")
+    public WebElement signoutButton;
+
+    @FindBy(xpath = "(//a[text()='Shop Now'])[2]")
+    public WebElement shopNowText;
+    @FindBy(xpath = "//a[text()='Log out']")
+    public WebElement logoutButton;
 
 
     //////////..............US-02...................//////////////
