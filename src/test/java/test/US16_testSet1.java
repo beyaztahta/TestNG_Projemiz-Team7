@@ -29,7 +29,7 @@ public class US16_testSet1 extends ReportMethods {
         locate.signInInputMail.sendKeys(ConfigReader.getProperty("mail"));
         extentTest.pass("geçerli mail adresi girildi");
 
-        locate.signInInputPassword.sendKeys(ConfigReader.getProperty("password"), Keys.PAGE_DOWN);
+        locate.signInInputPassword.sendKeys(ConfigReader.getProperty("password1"), Keys.PAGE_DOWN);
         extentTest.pass("geçerli şifre girildi");
         ReusableMethods.bekle(1);
         locate.signInButton.click();

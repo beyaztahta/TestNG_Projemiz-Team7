@@ -16,7 +16,7 @@ public class LocaterOguzhan {
     @FindBy(linkText = "Become a Vendor")
     public WebElement becomeAVendor;
     @FindBy(xpath = "//input[@id='user_email']")
-    public WebElement email;
+    public WebElement e_mail;
     @FindBy(xpath = "//*[text()='Verification code sent to your email: abc@abc.com.']")
     public WebElement verificationCodeText;
     @FindBy(xpath = "//span[@class='wcicon-status-completed']")
@@ -56,9 +56,7 @@ public class LocaterOguzhan {
     public WebElement emailVerificationCodeError;
 
 
-    public LocaterOguzhan(){
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
+
     @FindBy(xpath = "(//*[@class='product-media'])[1]")
     public WebElement urun;
 
@@ -121,6 +119,7 @@ public class LocaterOguzhan {
 
     @FindBy(xpath = "(//*[@class=\"input-text \"])[9]")
     public WebElement email;
+
 
     @FindBy(xpath = "(//*[@class=\"button alt\"])")
     public WebElement placeorder;

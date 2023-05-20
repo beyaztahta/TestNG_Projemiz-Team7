@@ -2,6 +2,7 @@ package test.ac01_ayse;
 
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
+import pages.LocaterOguzhan;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReportMethods;

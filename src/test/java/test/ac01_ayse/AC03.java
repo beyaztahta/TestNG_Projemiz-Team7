@@ -3,6 +3,7 @@ package test.ac01_ayse;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+import pages.LocaterOguzhan;
 import utilities.Driver;
 import utilities.ReportMethods;
 

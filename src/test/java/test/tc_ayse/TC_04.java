@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pages.LocaterAyse;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReportMethods;

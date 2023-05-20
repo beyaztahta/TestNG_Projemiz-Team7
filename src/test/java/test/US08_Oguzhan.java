@@ -82,12 +82,15 @@ public class US08_Oguzhan {
 
         //Kullanıcı Firstname alanına isim girer
         //Kullanıcı Lastname alanına soyisiim girer
+        /*
         locaterOguzhan.firstname.sendKeys(ConfigReader.getProperty("firstname"), Keys.TAB,
                 locaterOguzhan.lastname.sendKeys(ConfigReader.getProperty("lastname"),Keys.TAB,
                 Keys.TAB,
                         locaterOguzhan.country.sendKeys(ConfigReader.getProperty("country"),Keys.TAB,
                                 locaterOguzhan.streetaddress.sendKeys(ConfigReader.getProperty("streetaddress"),Keys.TAB,
         locaterOguzhan.country.sendKeys(ConfigReader.getProperty("country"));
+
+         */
 
 
 

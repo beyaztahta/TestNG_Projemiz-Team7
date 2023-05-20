@@ -4,6 +4,7 @@ package test.tc_ayse;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import pages.LocaterAyse;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReportMethods;
