@@ -127,16 +127,66 @@ public class LocaterAli {
     @FindBy(id = "sale_price")
     public WebElement productSalePrice;
 
-    @FindBy(xpath = "//*[@name='submit-data']")
-    public WebElement productsubmit;
 
 
+    @FindBy(id = "pro_title")
+    public WebElement productTitle;
 
+    @FindBy(id = "tinymce")
+    public WebElement productShortDesc;
 
+    @FindBy(id = "button insert-media add_media")
+    public WebElement productDesc;
+    @FindBy(id = "featured_img_display")
+    public WebElement productImg;
 
+//    @FindBy(id = "__wp-uploader-id-4")
+//    public WebElement productSelectFile;
+    @FindBy(xpath = "//*[@class='browser button button-hero']")
+    public WebElement productSelectFile;
+    @FindBy(xpath = "//*[@class='thumbnail']")
+    public WebElement productDambil;
+    @FindBy(id = "menu-item-browse")
+    public WebElement productImgMedia;
+    @FindBy(xpath = "//*[text()='Select']")
+    public WebElement productImgSelect;
+    @FindBy(xpath = "(//*[@class='button media-button button-primary button-large media-button-select'])[2]")
+    public WebElement productImgGalery;
+    @FindBy(xpath = "(//*[@class='attachment save-ready'])[2]")
+    public WebElement productLittleDambil;
+    @FindBy(id = "gallery_img_gimage_0_display")
+    public WebElement productLittleImg;
 
+    @FindBy(xpath = "//*[@class='media-modal-icon']")
+    public WebElement productSelectExit;
+    @FindBy(id = "excerpt_ifr")
+    public WebElement productShortIframe;
+    @FindBy(id = "description_ifr")
+    public WebElement productDescIframe;
+    @FindBy(id = "product_tags")
+    public WebElement productTags;
 
+    @FindBy(xpath = "(//*[@value='401'])[1]")
+    public WebElement productSportsButton;
+    @FindBy(xpath = "(//*[@value='293'])[1]")
+    public WebElement productAmazonBasicsButton;
+   @FindBy(id = "catalog_visibility")
+    public WebElement productCatalogDDM;
 
+    @FindBy(id = "sku")
+    public WebElement productSkuText;
+
+    @FindBy(id = "stock_status")
+    public WebElement productstock_status;
+
+    @FindBy(id = "manage_stock")
+    public WebElement productmanage_stockRadioButton;
+
+    @FindBy(id = "sold_individually")
+    public WebElement sold_individuallyRadioButton;
+
+    @FindBy(id = "wcfm_products_simple_submit_button")
+    public WebElement productSubmit;
 
 
 }
