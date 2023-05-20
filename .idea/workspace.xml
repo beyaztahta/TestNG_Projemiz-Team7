@@ -5,40 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deneme123.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterOguzhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterOguzhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US04_Gonul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US04_Gonul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US08_Oguzhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US08_Oguzhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US12_Gonul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US12_Gonul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US16_testSet1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US16_testSet1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US16_testSet2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US16_testSet2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US17_testSet1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US17_testSet1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US17_testSet1_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US17_testSet1_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US19_Busra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US19_Busra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US_15/TC_08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_04_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_05_06 (1).java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_05_06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_07_08 (1).java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_07_08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US03_AC1_TC01_02_03_04_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US03_Elif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US03_TC02_TC03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US03_Elif2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US14_TC01_TC02_TC03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US14_Elif1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US14_TC04_TC05_TC06_TC07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US14_Elif2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US01_Sevcan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US02_Sevcan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US10_Sevcan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_01_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_02_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_03_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_04_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_05_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_06_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_07_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US_15/TC_08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_TC_08_Ayse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US09_Ayse1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US09_Ayse2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US09_Ayse3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US09_Ayse4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US07_CompareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US07_Ali.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US18_AddProduct_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US18_Ali.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US20_Ali_CouponNegative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US20_Ali_CouponPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/serap_US05_US06_US21/US05/TC01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US05_Serap1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/serap_US05_US06_US21/US05/TC02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US05_Serap2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/serap_US05_US06_US21/US06/TC01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US06_Serap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/serap_US05_US06_US21/US21/TC01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US21_Serap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_Ayse1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_Ayse2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_Ayse3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_Ayse4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_05_06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_Ayse5_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/tc_ayse/TC_07_08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US15_Ayse7_8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,51 +89,17 @@
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.US07_CompareTest">
-    <configuration name="AC01" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.US16_testSet1">
+    <configuration name="US07_Ali" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.ac01_ayse.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.ac01_ayse" />
-      <option name="MAIN_CLASS_NAME" value="test.ac01_ayse.AC01" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AC02" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.ac01_ayse.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.ac01_ayse" />
-      <option name="MAIN_CLASS_NAME" value="test.ac01_ayse.AC02" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="US07_CompareTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.ali_US20_US18_US07.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US07_CompareTest" />
+      <option name="MAIN_CLASS_NAME" value="test.US07_Ali" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -141,7 +107,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US17_testSet1_2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="US09_Ayse1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ac01_ayse" />
+      <option name="MAIN_CLASS_NAME" value="test.US09_Ayse1" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US09_Ayse2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.ac01_ayse" />
+      <option name="MAIN_CLASS_NAME" value="test.US09_Ayse2" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US16_testSet1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Deneme123" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.US16_testSet1" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -168,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.US07_CompareTest" />
-        <item itemvalue="TestNG.AC02" />
-        <item itemvalue="TestNG.AC01" />
+        <item itemvalue="TestNG.US16_testSet1" />
+        <item itemvalue="TestNG.US07_Ali" />
+        <item itemvalue="TestNG.US09_Ayse2" />
+        <item itemvalue="TestNG.US09_Ayse1" />
         <item itemvalue="TestNG.US19_Busra" />
-        <item itemvalue="TestNG.US17_testSet1_2" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +211,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC01.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/test/US09_Ayse1.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
