@@ -4,95 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
-    <list default="true" id="22502e58-d564-4277-a31f-62877de69439" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Deneme123.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Deneme123.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-
     <list default="true" id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_05_2023_16_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_05_2023_16_24__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_05_2023_16_24__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_05_2023_16_24__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_05_2023_16_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_05_2023_16_27__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CustomerRegisterLocates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CustomerRegisterLocates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US01_US02_US10_Sevcan/US10.java" beforeDir="false" />
-
-
-
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterOguzhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterOguzhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US08_Oguzhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/US08_Oguzhan.java" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US17_testSet1_2.java" beforeDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_02_30_38_14052023.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOutput/screenshot/screenshot_02_35_56_14052023Compare Page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterAyse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LocaterAyse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US03_AC1_TC01_02_03_04_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Elif_US03_AC1_TC01_02_03_04_05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US03_TC02_TC03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Elif_US03_TC02_TC03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US14_TC01_TC02_TC03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Elif_US14_TC01_TC02_TC03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Elif_US14_TC04_TC05_TC06_TC07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Elif_US14_TC04_TC05_TC06_TC07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/US17_testSet1_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterAli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterAyse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterBusra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterElif.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterGonul.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMali.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterMuhammedAli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterOguzhan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterSerap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LocaterSevcan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LocaterSevcan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Class1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Class1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Elif_US03_AC1_TC01_02_03_04_05.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Elif_US03_AC1_TC01_02_03_04_05.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Elif_US03_TC02_TC03.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Elif_US03_TC02_TC03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Elif_US14_TC01_TC02_TC03.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Elif_US14_TC01_TC02_TC03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Elif_US14_TC04_TC05_TC06_TC07.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Elif_US14_TC04_TC05_TC06_TC07.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US11_MuhammedAli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US16_testSet2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US17_testSet1_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_03.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_04.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_05.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_05.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_06.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_06.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_07.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_07.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_08.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/US_15/TC_08.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US07_CompareTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US18_AddProduct_Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_NegativeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/ali_US20_US18_US07/US20_Coupons_PositiveTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
-
-
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterBusra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterGonul.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LocaterMuhammedAli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US11_MuhammedAli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US19_Busra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/US22_Busra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01/AC01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01/AC02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01/AC03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ac01/AC04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ac01_ayse/AC04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -105,62 +42,33 @@
       </MavenGeneralSettings>
     </option>
   </component>
-
-  <component name="ProjectId" id="2Q1x5rBmeTy0hsfYdwFByS9ieNw" />
-  <component name="ProjectLevelVcsManager">
-
   <component name="ProjectId" id="2Pho9df38g6a2gZU4wqMXKOb2O0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/TestNG_Projemiz-Team7/src/test/java/pages",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
-
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
-
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-
-
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\pages" />
-      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7\TestOutput" />
-      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\utilities" />
-      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7" />
-      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test\US01_US02_US10_Sevcan" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test\US01_US02_US10_Sevcan" />
+      <recent name="C:\Users\Lenovo\IdeaProjects\Deneme123\src\test\java\test" />
+      <recent name="C:\Users\Lenovo\IdeaProjects\Deneme123\src\test\java\pages" />
+      <recent name="C:\Users\Lenovo\IdeaProjects\Deneme123\src\test\java\test\tc_ayse" />
+      <recent name="C:\Users\Lenovo\IdeaProjects\Deneme123\src\test\java\test\ac01" />
       <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\resources" />
-      <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\utilities" />
-      <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\pages" />
-      <recent name="C:\Users\ASUS\IdeaProjects\TestNG_Projemiz-Team7\src\test\java\test" />
     </key>
   </component>
-
-  <component name="RunManager" selected="TestNG.US01">
-    <configuration name="US01" type="TestNG" temporary="true" nameIsGenerated="true">
-
   <component name="RunManager" selected="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05">
     <configuration name="Elif_US14_TC01_TC02_TC03.testCase03" type="TestNG" temporary="true" nameIsGenerated="true">
-
-  <component name="RunManager" selected="TestNG.US11_MuhammedAli">
-    <configuration name="US11_MuhammedAli" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -172,28 +80,6 @@
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC01_TC02_TC03" />
       <option name="METHOD_NAME" value="testCase03" />
       <option name="TEST_OBJECT" value="METHOD" />
-
-      <option name="MAIN_CLASS_NAME" value="test.US11_MuhammedAli" />
-
-  <component name="RunManager" selected="TestNG.US18_AddProduct_Test"/>
-    <configuration name="US18_AddProduct_Test" type="TestNG" temporary="true" nameIsGenerated="true">
-
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.US01_US02_US10_Sevcan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-
-      <option name="PACKAGE_NAME" value="test.US01_US02_US10_Sevcan" />
-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US01" />
-      <option name="TEST_OBJECT" value="CLASS" />
-
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
-
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -201,11 +87,6 @@
       </method>
     </configuration>
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.test04" type="TestNG" temporary="true" nameIsGenerated="true">
-
-    <configuration name="US16_testSet2" type="TestNG" temporary="true" nameIsGenerated="true">
-
-    <configuration name="US18_AddProduct_Test.addProduct02" type="TestNG" temporary="true" nameIsGenerated="true">
-
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -217,79 +98,31 @@
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
       <option name="METHOD_NAME" value="test04" />
       <option name="TEST_OBJECT" value="METHOD" />
-
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-
-    <configuration name="US10" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.US01_US02_US10_Sevcan.*" />
-
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testCase05" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
-
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-
-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
-      <option name="TEST_OBJECT" value="CLASS" />
-
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
       <option name="METHOD_NAME" value="testCase05" />
-
-      <option name="MAIN_CLASS_NAME" value="test.US16_testSet2" />
-      <option name="METHOD_NAME" value="signIn" />
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
-      <option name="METHOD_NAME" value="addProduct02" />
       <option name="TEST_OBJECT" value="METHOD" />
-
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-
-    <configuration name="US10.good" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.US01_US02_US10_Sevcan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
-      <option name="METHOD_NAME" value="good" />
-
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testCase07" type="TestNG" temporary="true" nameIsGenerated="true">
-
-    <configuration name="US17_testSet1" type="TestNG" temporary="true" nameIsGenerated="true">
-    <configuration name="US18_AddProduct_Test.addProduct04" type="TestNG" temporary="true" nameIsGenerated="true"/>
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
-      <option name="METHOD_NAME" value="addProduct04" />
-  <component name="RunManager" selected="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05">
-    <configuration name="Elif_US14_TC01_TC02_TC03.testCase03" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -300,12 +133,6 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
       <option name="METHOD_NAME" value="testCase07" />
-      <option name="MAIN_CLASS_NAME" value="test.US17_testSet1" />
-      <option name="TEST_OBJECT" value="CLASS" />
-
-      <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC01_TC02_TC03" />
-      <option name="METHOD_NAME" value="testCase03" />
-
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -313,31 +140,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-
-    <configuration name="US10.strong" type="TestNG" temporary="true" nameIsGenerated="true">
-
     <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testcase06" type="TestNG" temporary="true" nameIsGenerated="true">
-
-    <configuration name="US17_testSet1_2" type="TestNG" temporary="true" nameIsGenerated="true">
-
-    <configuration name="US18_AddProduct_Test.addProduct05" type="TestNG" temporary="true" nameIsGenerated="true"/>
-
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.US01_US02_US10_Sevcan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
-      <option name="METHOD_NAME" value="strong" />
-
-      <option name="PACKAGE_NAME" value="test.ali_US20_US18_US07" />
-      <option name="MAIN_CLASS_NAME" value="test.ali_US20_US18_US07.US18_AddProduct_Test" />
-      <option name="METHOD_NAME" value="addProduct05" />
-    <configuration name="Elif_US14_TC04_TC05_TC06_TC07.test04" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Deneme123" />
       <extension name="coverage">
         <pattern>
@@ -346,13 +149,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-
-      <option name="MAIN_CLASS_NAME" value="test.US17_testSet1_2" />
-      <option name="TEST_OBJECT" value="CLASS" />
-
       <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
       <option name="METHOD_NAME" value="testcase06" />
-
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -360,13 +158,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-
-    <configuration name="US10.weak" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.US01_US02_US10_Sevcan.*" />
-
     <configuration name="US17_testSet1_2" type="TestNG" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -385,24 +176,6 @@
     </configuration>
     <configuration name="US18_AddProduct_Test.testCase02" type="TestNG" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="CLASS" />
-    <configuration name="Elif_US14_TC04_TC05_TC06_TC07.testcase06" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Deneme123" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-
-      <option name="MAIN_CLASS_NAME" value="test.US01_US02_US10_Sevcan.US10" />
-      <option name="METHOD_NAME" value="weak" />
-
-      <option name="MAIN_CLASS_NAME" value="test.Elif_US14_TC04_TC05_TC06_TC07" />
-      <option name="METHOD_NAME" value="testcase06" />
-
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -411,23 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
-
-        <item itemvalue="TestNG.US10.weak" />
-        <item itemvalue="TestNG.US10.strong" />
-        <item itemvalue="TestNG.US10.good" />
-        <item itemvalue="TestNG.US10" />
-        <item itemvalue="TestNG.US01" />
-
         <item itemvalue="TestNG.US17_testSet1_2" />
-
-        <item itemvalue="TestNG.US11_MuhammedAli" />
-        <item itemvalue="TestNG.US17_testSet1_2" />
-        <item itemvalue="TestNG.US16_testSet2.signIn" />
-        <item itemvalue="TestNG.US16_testSet2" />
-        <item itemvalue="TestNG.US17_testSet1" />
-
-        <item itemvalue="TestNG.US18_AddProduct_Test" />
-        <item itemvalue="TestNG.US18_AddProduct_Test.addProduct02" />
         <item itemvalue="TestNG.US18_AddProduct_Test.testCase02" />
         <item itemvalue="TestNG.US18_AddProduct_Test.addProduct05" />
         <item itemvalue="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testCase05" />
@@ -435,19 +192,17 @@
         <item itemvalue="TestNG.Elif_US14_TC04_TC05_TC06_TC07.testcase06" />
         <item itemvalue="TestNG.Elif_US14_TC04_TC05_TC06_TC07.test04" />
         <item itemvalue="TestNG.Elif_US14_TC01_TC02_TC03.testCase03" />
-
       </list>
     </recent_temporary>
   </component>
-
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="22502e58-d564-4277-a31f-62877de69439" name="Changes" comment="" />
-      <created>1684534708842</created>
+      <changelist id="80eaa971-04f3-4161-87d8-e04749e73aeb" name="Changes" comment="" />
+      <created>1683918523706</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684534708842</updated>
+      <updated>1683918523706</updated>
     </task>
     <servers />
   </component>
