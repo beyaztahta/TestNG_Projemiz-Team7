@@ -1,69 +1,60 @@
-package test.US_15;
+package test.tc_ayse;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReportMethods;
 
 import java.util.List;
 
 import static org.testng.AssertJUnit.*;
 import static utilities.ReusableMethods.*;
-import static utilities.ReusableMethods.scrollEnd;
 
-public class TC_03 {
+public class TC_03 extends ReportMethods {
+    LocaterAyse locaterAyse = new LocaterAyse();
+    TC_01 tc01 = new TC_01();
+
     @Test
     public void tc_03() {
+        extentTest = extentReports.createTest("Hubcomfy", "Shipping Bolumu");
 
-
-        LocaterAyse locaterAyse = new LocaterAyse();
-        //kullanici web sitesine gider
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
-        //signin tusuna basar
-        locaterAyse.signIn.click();
-        //kullanici mail adresini girer, passwordunu girer ve sign in buttonuna tiklar
-        locaterAyse.email.sendKeys(ConfigReader.getProperty("ayse"), Keys.TAB, ConfigReader.getProperty("passAyse"), Keys.ENTER);
-        bekle(5);
-        //kullanici sayfanin en altina gider
-        scrollEnd();
-        bekle(2);
-        //kullanici my account linkine tiklar
-        locaterAyse.myAccount.click();
-        //kullanici sol kisimdaki Store Manager'a tiklar
-        locaterAyse.storeManager.click();
-        //Kullanci sol bolumdeki Products buttonuna gider
-        Actions actions = new Actions(Driver.getDriver());
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        hover(locaterAyse.products);
-        //Kullanici Add New Linkine tiklar
-        click(locaterAyse.addNew);
-
-        //Kullanici sayfayi asagiya indirir
-        scrollEnd();
-        actions.sendKeys(Keys.PAGE_UP, Keys.ARROW_DOWN).perform();
+        tc01.start();
 
         //	Kullanici shipping menusunu tiklar
         click(locaterAyse.shipping);
+        extentTest.info("Shipping menusune gecildi");
         //	Kullanici weight bolumune veri girer
         locaterAyse.weight.sendKeys(ConfigReader.getProperty("weight"));
+        extentTest.info("Weight bolumune veri girildi");
+        bekle(2);
         assertEquals(locaterAyse.weight.getAttribute("value"), ConfigReader.getProperty("weight"));
+        extentTest.pass("Verinin varligi kontrol edildi");
         bekle(2);
         //	Kullanici Dimensions Length bolumune veri girer
         locaterAyse.dimensionsLength.sendKeys(ConfigReader.getProperty("length"));
+        extentTest.info("Length bolumune veri girildi");
+        bekle(2);
         assertEquals(locaterAyse.dimensionsLength.getAttribute("value"), ConfigReader.getProperty("length"));
+        extentTest.pass("Verinin varligi kontrol edildi");
         bekle(2);
         //	Kullanici Dimensions Width bolumune veri girer
         locaterAyse.dimensionsWidth.sendKeys(ConfigReader.getProperty("width"));
+        extentTest.info("Width bolumune veri girildi");
+        bekle(2);
         assertEquals(locaterAyse.dimensionsWidth.getAttribute("value"), ConfigReader.getProperty("width"));
+        extentTest.pass("Verinin varligi kontrol edildi");
         bekle(2);
         //	Kullanici Dimensions Height bolumune veri girer
         locaterAyse.dimensionsHeight.sendKeys(ConfigReader.getProperty("height"));
+        extentTest.info("Height bolumune veri girildi");
+        bekle(2);
         assertEquals(locaterAyse.dimensionsHeight.getAttribute("value"), ConfigReader.getProperty("height"));
+        extentTest.pass("Verinin varligi kontrol edildi");
         //	Kullanici Shipping class dropdowna basar
-        locaterAyse.shippingClassDdm.click();
+        click(locaterAyse.shippingClassDdm);
+        extentTest.info("Shipping dropdown'una tiklandi");
         Select select = new Select(locaterAyse.shippingClassDdm);
         List<WebElement> ddm = select.getOptions();
         int size = ddm.size();
@@ -71,15 +62,19 @@ public class TC_03 {
         if (size > 1) {
             System.out.println("secenekler sunlardir:");
             ddm.forEach(t -> System.out.println(t.getText()));
+            extentTest.pass("Dropdown'da degisik secenekler kontrol edildi");
         } else {
-            System.out.println("herhangi bir secenek bulunmamaktadir");
+
+            extentTest.info("Dropdown'da secenek yoktur");
         }
         for (WebElement w : ddm) {
             assertTrue(w.isEnabled());
         }
 
+
         //	Kullanici Processing Time'da Ready to ship in.. Dropdown'a basar
         locaterAyse.processingTimeDdm.click();
+        extentTest.info("Processing time dropdown'ina basildi");
         select = new Select(locaterAyse.processingTimeDdm);
         List<WebElement> ddmMenu = select.getOptions();
         //	Kullanici Processing Time'da Ready to ship in.. Dropdown'da secenekler gorur
@@ -87,14 +82,17 @@ public class TC_03 {
         if (numOfDdm > 1) {
             System.out.println("icindeki secenekler sunlardir:");
             ddmMenu.forEach(t -> System.out.println(t.getText()));
+            extentTest.pass("Dropdown'da secenekler vardir");
         } else {
-            System.out.println("herhangi bir secenek yoktur");
+            extentTest.info("Ddm menude secenek yoktur");
         }
 
-        //	Kullanici Processing Time'da Ready to ship in.. Dropdown'da secenekler tiklar
+        //	Kullanici Processing Time'da Ready to ship in.. Dropdown'da seceneklerini kontrol eder
         for (WebElement w : ddmMenu) {
             assertTrue(w.isDisplayed());
         }
+        extentTest.pass("Ddm deki secenekler tiklanabilir");
         Driver.closeDriver();
+        extentTest.pass("Driver kapatildi");
     }
 }

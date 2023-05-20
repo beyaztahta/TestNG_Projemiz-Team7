@@ -1,57 +1,37 @@
-package test.US_15;
+package test.tc_ayse;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import utilities.ConfigReader;
-import utilities.Driver;
+import utilities.*;
 
 import static org.testng.AssertJUnit.*;
-import static utilities.ReusableMethods.*;
+import static utilities.ReusableMethods.click;
+
+import utilities.ConfigReader;
 
 import java.util.List;
 
-public class TC_02 {
+public class TC_02 extends ReportMethods {
+    LocaterAyse locaterAyse = new LocaterAyse();
+    TC_01 tc01 = new TC_01();
+
     @Test
-    public void testName() {
+    public void tc02() {
+
+        extentTest = extentReports.createTest("Hubcomfy", "Inventory bolumu");
+        tc01.start();
 
 
-        LocaterAyse locaterAyse = new LocaterAyse();
-        //kullanici web sitesine gider
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
-        //signin tusuna basar
-        locaterAyse.signIn.click();
-        //kullanici mail adresini girer, passwordunu girer ve sign in buttonuna tiklar
-        locaterAyse.email.sendKeys(ConfigReader.getProperty("ayse"), Keys.TAB, ConfigReader.getProperty("passAyse"), Keys.ENTER);
-        bekle(5);
-        //kullanici sayfanin en altina gider
-        scrollEnd();
-        bekle(2);
-        //kullanici my account linkine tiklar
-        locaterAyse.myAccount.click();
-        //kullanici sol kisimdaki Store Manager'a tiklar
-        locaterAyse.storeManager.click();
-        //Kullanci sol bolumdeki Products buttonuna gider
-        Actions actions = new Actions(Driver.getDriver());
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        hover(locaterAyse.products);
-        //Kullanici Add New Linkine tiklar
-        click(locaterAyse.addNew);
-
-        //Kullanici sayfayi en alta indirir
-        scrollEnd();
-        actions.sendKeys(Keys.PAGE_UP).perform();
-
-
-        //Kullanici Inventory menusunu tiklar
-        //locaterAyse.inventory.click();
         //Kullanici SKU'nun yanindaki kutucuga veri girisi yapar
         locaterAyse.skuBox.sendKeys(ConfigReader.getProperty("skuValue"));
+        extentTest.info("SKU kutusuna veri girildi");
         assertEquals(locaterAyse.skuBox.getAttribute("value"), ConfigReader.getProperty("skuValue"));
+        extentTest.pass("Kutudaki verinin varligi kontrol edildi");
+
         //Kullanici Stock Statusun yanindaki kutucukta in stock gorur
         assertTrue(locaterAyse.stockStatus.isDisplayed());
+        extentTest.pass("Stokta secenegi kontrol edildi");
         Select select = new Select(locaterAyse.stockStatus);
         List<WebElement> options = select.getOptions();
         int numOfOptions = options.size();
@@ -65,20 +45,27 @@ public class TC_02 {
 
             assertTrue(option.isEnabled());
         }
+        extentTest.pass("Seceneklerin varligi kontrol edildi");
         //Kullanici Stock Statusun yanindaki kutucuktaki oku tiklar*************
         assertTrue(locaterAyse.manageStockCheckbox.isEnabled());
-
-        locaterAyse.manageStockCheckbox.click();
-
+        extentTest.pass("Manage Stock checkbox'i kontrol edildi");
+        click(locaterAyse.manageStockCheckbox);
+      extentTest.pass("Checkbox tiklandi");
         //Kullanici Manage Stock'un yanindaki checkbox a tiklar
         assertTrue(locaterAyse.soldIndividually.isEnabled());
+        extentTest.pass("Sold individually checkbox'i kontrol edildi");
         //Manage Stock'un checkboxini tiklayinca Stock Qty cikar
         assertTrue(locaterAyse.stockQtyBox.isDisplayed());
+        extentTest.pass("Stock Qty nin varligi kontrol edildi");
         //Stock Qty 'e veri gonderilebilmeli
         locaterAyse.stockQtyBox.clear();
+        extentTest.info("StockQty kutusundeki veri silindi");
         locaterAyse.stockQtyBox.sendKeys(ConfigReader.getProperty("stockQtyBox"));
-        assertEquals(locaterAyse.skuBox.getAttribute("value"), ConfigReader.getProperty("skuValue"));
+        extentTest.info("StockQty kutusuna yeni veri girildi");
         assertEquals(locaterAyse.stockQtyBox.getAttribute("value"), ConfigReader.getProperty("stockQtyBox"));
+        extentTest.pass("Girilen verinin varligi kontrol edildi");
+
+
         //Manage Stock'un checkboxini tiklayinca Allow Backorders cikar
         select = new Select(locaterAyse.allowBackOrderddm);
         List<WebElement> allowBackorders = select.getOptions();
@@ -97,11 +84,15 @@ public class TC_02 {
             assertTrue(option.isEnabled());
         }
 
-
+        extentTest.pass("Allow Backorders'taki ddm menudekilerin varligi kontrol edildi");
         //manage stock checkbox'a tiklayinca stock status  kaybolur
         assertFalse(locaterAyse.stockStatusTitle.isDisplayed());
+        extentTest.pass("Manage Stock'un checkbox'ina tiklayinca Stock statusun kayboldugu kontrol edildi ");
         //sold individually checkbox'ini tiklar
         locaterAyse.soldIndividually.click();
+        extentTest.info("Sold individually checkbox'i tiklandi");
         assertTrue(locaterAyse.soldIndividually.isSelected());
+        extentTest.pass("Secilen checkbox'in tikli oldugu kontrol edildi");
+        extentTest.pass("Driver kapatildi");
     }
 }

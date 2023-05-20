@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class LocaterAyse {
 
 
@@ -17,17 +19,10 @@ public LocaterAyse(){
 
     @FindBy (xpath = "(//i[@class='w-icon-account'])[1]")
     public WebElement signIn;
-   // @FindBy(xpath = "//*[@id=\"header\"]//a[@class='login inline-type']/span")
-   // public WebElement signinlink;
 
     @FindBy(xpath = "//*[@id=\"username\"]")
     public WebElement email;
 
-    @FindBy(xpath = "//input[@id='password']")
-    public WebElement password;
-
-    @FindBy(xpath = "(//button[@type='submit'])[1]")
-    public WebElement signinButton;
 
     @FindBy(linkText = "My Account")
     public WebElement myAccount;
@@ -39,7 +34,6 @@ public LocaterAyse(){
     public WebElement products;
     @FindBy(xpath = "//a[@href='https://hubcomfy.com/store-manager/products-manage/']")
     public WebElement addNew;
-
 
     @FindBy(xpath = "//*[@id='wcfm_products_manage_form_inventory_head']")
     public WebElement inventory;
@@ -95,15 +89,13 @@ public LocaterAyse(){
     @FindBy(xpath = "(//input[@class='select2-search__field'])[2]")
     public WebElement attributesColorDdm;
     @FindBy(xpath = "//input[@id='attributes_is_active_1']")
-
     public WebElement attributesColorActiveCheckbox;
-
     @FindBy(xpath = "(//button[text()='Select all'])[1]")
     public WebElement attributesColorSelectAllButton;
     @FindBy(xpath = "(//button[text()='Select none'])[1]")
     public WebElement attributesColourSelectNoneButton;
     @FindBy(xpath = "(//button[text()='Add New'])[1]")
-    public WebElement attributesColorAddNewButton;//Buttona tiklayinca alert acildi!!! text gonderebiliyorum Ok ve cancel buttonu var
+    public WebElement attributesColorAddNewButton;
     @FindBy(xpath = "//input[@id='attributes_is_visible_1']")
     public WebElement attributesVisibleOnTheProductPage1;
     //attributes Size kismi
@@ -136,11 +128,10 @@ public LocaterAyse(){
     @FindBy(xpath = "//input[@id='attributes_is_visible_3']")
     public WebElement attributesVisibleOnTheProductPage;
 
-
     //Linked
     @FindBy(xpath = "(//input[@class='select2-search__field'])[4]")
     public WebElement linkedUpSells;
-    @FindBy(xpath = "(//input[@class='select2-search__field'])[4]")
+    @FindBy(xpath = "(//input[@class='select2-search__field'])[5]")
     public WebElement linkedCrossSells;
     //seo
     @FindBy(xpath = "//input[@id='yoast_wpseo_focuskw_text_input']")
@@ -148,7 +139,6 @@ public LocaterAyse(){
     @FindBy(xpath = "//textarea[@id='yoast_wpseo_metadesc']")
     public WebElement seoMetaDesc;
     //Toplam urun gosterme
-
     @FindBy(xpath = "//select[@id='piecetype']")
     public WebElement pieceTypeDdm;
     @FindBy(xpath = "//input[@id='unitpercart']")
@@ -157,7 +147,6 @@ public LocaterAyse(){
     public WebElement minOrderQuantity;
 
     //advanced
-
     @FindBy(xpath = "//input[@id='enable_reviews']")
     public WebElement enableReviews;
     @FindBy(xpath = "//input[@id='menu_order']")
@@ -165,5 +154,19 @@ public LocaterAyse(){
     @FindBy(xpath = "//textarea[@id='purchase_note']")
     public WebElement purchaseNote;
 
-
+//***********************
+@FindBy(xpath = "(//span[@class='fields_collapser attributes_collapser wcfmfa fa-arrow-circle-down'])[2]")
+public WebElement circleColor;
+    @FindBy(xpath = "(//input[@class='select2-search__field'])[2]")
+    public WebElement colorInput;
+    @FindBy(xpath = "//li[@role='option']")
+    public List<WebElement> colorInputList;
+    @FindBy(xpath = "(//button[text()='Add New'])[1]")
+    public WebElement colorAddNew;
+    @FindBy(id = "attributes_is_active_2")
+    public WebElement sizeButton;
+    @FindBy(xpath = "(//input[@class='select2-search__field'])[3]")
+    public WebElement sizeInput;
+    @FindBy(xpath = "(//button[text()='Add New'])[2]")
+    public WebElement sizeAddNew;
 }
