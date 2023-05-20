@@ -19,7 +19,7 @@ public class US19_Busra {
     public void testVendorShopping() {
         locatorBusra= new LocatorBusra();
 
-        Driver.getDriver().get(ConfigReader.getProperty("hubcomUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
         locatorBusra.signIn.click();
         locatorBusra.userNameBox.sendKeys("avcibusranur00@gmail.com");
         ReusableMethods.bekle(2);

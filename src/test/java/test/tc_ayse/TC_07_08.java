@@ -3,6 +3,7 @@ package test.tc_ayse;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pages.LocaterAyse;
 import utilities.ReportMethods;
 
 import static org.testng.AssertJUnit.*;

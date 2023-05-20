@@ -1,6 +1,7 @@
 package test.ac01_ayse;
 
 import org.testng.annotations.Test;
+import pages.LocaterOguzhan;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReportMethods;

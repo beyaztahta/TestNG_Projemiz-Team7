@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+import pages.LocaterAyse;
 import utilities.ConfigReader;
 import utilities.Driver;
 

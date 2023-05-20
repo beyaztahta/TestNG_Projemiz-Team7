@@ -3,6 +3,7 @@ package test.tc_ayse;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+import pages.LocaterAyse;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReportMethods;
