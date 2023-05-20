@@ -3,6 +3,7 @@ package utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -305,6 +306,70 @@ public class ReusableMethods {
                     "Timeout waiting for Page Load Request to complete after " + timeout + " seconds");
         }
     }
+        //Faker
+    /*
+  email, username, password, firsmane,lastname, copon  olarak ( "customerRegesterPage.User_Name_Input.sendKeys(fakerInput("coupon"));" gibi)
+  seçim yaptığınız taktirde ilgili konuda random oluşumlar yapacaktır.
+     */
+
+        public static String fakerInput(String faker2) {
+            Faker faker = new Faker();
+            if (faker2 == "email") {
+                String fakeEmail = faker.internet().emailAddress();
+                return fakeEmail;
+            } else if (faker2 == "username") {
+                String fakeUsername = faker.name().username();
+                return fakeUsername;
+            } else if (faker2 == "password") {
+                String fakePassword = faker.internet().password();
+                return fakePassword;
+
+            } else if (faker2 == "firsname") {
+                String fakerFirstName = faker.name().firstName();
+                return fakerFirstName;
+            } else if (faker2 == "lastname") {
+
+                String fakerLastName = faker.name().lastName();
+                return fakerLastName;
+            } else if (faker2 == "coupon") {
+                String fakerCoupon = faker.code().asin();
+                return fakerCoupon;
+            } else if (faker2=="biography"){
+
+                String biography;
+                String name = faker.name().fullName();
+                String job = faker.job().title();
+                String company = faker.company().name();
+                String country = faker.country().name();
+                String quote = faker.shakespeare().hamletQuote();
+
+                biography = name+ " "+ job +"olarak" + company +"'da çalışıyor. "+ country+"'da yaşıyor ve şöyle diyor:"+ quote;
 
 
-}
+                return biography;
+
+            } else if (faker2=="company") {
+
+                String fakerCompany = faker.company().name();
+                return  fakerCompany;
+            } else if (faker2=="street") {
+
+                String fakerStreet = faker.address().streetPrefix();
+                return fakerStreet;
+            } else if (faker2=="towncity") {
+                String fakerTownCity = faker.address().cityName();
+                return fakerTownCity;
+            } else if (faker2=="zipcode") {
+
+                String fakerZipcode = faker.address().zipCodeByState("ZIP CODE");
+                return fakerZipcode;
+
+            } else {
+
+                String fakePhoneNumber = faker.phoneNumber().phoneNumber();
+                return fakePhoneNumber;
+
+            }
+
+        }
+    }

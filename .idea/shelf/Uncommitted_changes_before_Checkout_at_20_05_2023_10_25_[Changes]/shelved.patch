@@ -1,0 +1,534 @@
+Index: src/test/java/test/US01_US02_US10_Sevcan/US10.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package test.US01_US02_US10_Sevcan;\r\n\r\nimport org.openqa.selenium.Keys;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\nimport pages.CustomerRegisterLocates;\r\nimport utilities.ConfigReader;\r\nimport utilities.Driver;\r\nimport utilities.ReusableMethods;\r\n\r\nimport static utilities.ReusableMethods.bekle;\r\n\r\npublic class US10 {\r\n    CustomerRegisterLocates locaterSevcan = new CustomerRegisterLocates();\r\n\r\n    @Test(priority = 1)\r\n    public void tooshort() {\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"url\"));\r\n\r\n        locaterSevcan.Register_Button.click();\r\n        locaterSevcan.vendorButton.click();\r\n        locaterSevcan.vendorEmail.sendKeys(ConfigReader.getProperty(\"fakemail\"),Keys.TAB);\r\n        locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty(\"fakecode\"),Keys.TAB);\r\n        locaterSevcan.reSendCode.click();\r\n        locaterSevcan.vendorPassword1.sendKeys((\"12345\"),Keys.TAB);\r\n\r\n        Assert.assertTrue(locaterSevcan.tooShort.isDisplayed());\r\n\r\n        bekle(2);\r\n        ReusableMethods.tumSayfaResmi();\r\n\r\n    }\r\n\r\n    @Test(priority = 2)\r\n    public void weak() {\r\n\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"url\"));\r\n        locaterSevcan.Register_Button.click();\r\n        locaterSevcan.vendorButton.click();\r\n        locaterSevcan.vendorEmail.sendKeys(ConfigReader.getProperty(\"fakemail\"));\r\n        locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty(\"fakecode\"));\r\n        locaterSevcan.reSendCode.click();\r\n        locaterSevcan.vendorPassword1.sendKeys((\"12345\") + Keys.TAB);\r\n        Assert.assertTrue(locaterSevcan.tooShort.isDisplayed());\r\n\r\n        bekle(2);\r\n        ReusableMethods.tumSayfaResmi();\r\n\r\n    }\r\n\r\n    @Test(priority = 3)\r\n    public void good() {\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"url\"));\r\n\r\n        locaterSevcan.Register_Button.click();\r\n        locaterSevcan.vendorButton.click();\r\n        locaterSevcan.vendorEmail.sendKeys(ConfigReader.getProperty(\"fakemail\"));\r\n        locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty(\"fakecode\"));\r\n        locaterSevcan.reSendCode.click();\r\n        locaterSevcan.vendorPassword1.sendKeys((\"AA.22aa\")+Keys.TAB);\r\n\r\n        Assert.assertTrue(locaterSevcan.good.isDisplayed());\r\n\r\n        bekle(2);\r\n        ReusableMethods.tumSayfaResmi();\r\n\r\n\r\n\r\n    }\r\n\r\n    @Test(priority = 4)\r\n    public void strong() {\r\n\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"url\"));\r\n\r\n        locaterSevcan.Register_Button.click();\r\n        locaterSevcan.vendorButton.click();\r\n        locaterSevcan.vendorEmail.sendKeys(ConfigReader.getProperty(\"fakemail\"));\r\n        locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty(\"fakecode\"));\r\n        locaterSevcan.reSendCode.click();\r\n        locaterSevcan.vendorPassword1.sendKeys((\"AA.22.aa.123456789\") + Keys.TAB);\r\n\r\n        Assert.assertTrue(locaterSevcan.strong.isDisplayed());\r\n\r\n        bekle(2);\r\n        ReusableMethods.tumSayfaResmi();\r\n        Driver.closeDriver();\r\n\r\n\r\n    }\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/test/US01_US02_US10_Sevcan/US10.java b/src/test/java/test/US01_US02_US10_Sevcan/US10.java
+--- a/src/test/java/test/US01_US02_US10_Sevcan/US10.java	
++++ b/src/test/java/test/US01_US02_US10_Sevcan/US10.java	
+@@ -1,21 +1,25 @@
+ package test.US01_US02_US10_Sevcan;
+-
+ import org.openqa.selenium.Keys;
+ import org.testng.Assert;
+ import org.testng.annotations.Test;
+ import pages.CustomerRegisterLocates;
+ import utilities.ConfigReader;
+ import utilities.Driver;
++import utilities.ReportMethods;
+ import utilities.ReusableMethods;
+ 
+ import static utilities.ReusableMethods.bekle;
+ 
+-public class US10 {
++public class US10 extends ReportMethods {
++
+     CustomerRegisterLocates locaterSevcan = new CustomerRegisterLocates();
+ 
+     @Test(priority = 1)
+     public void tooshort() {
++        extentTest=extentReports.createTest("tooshort","Test Raporu");
++
+         Driver.getDriver().get(ConfigReader.getProperty("url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
+ 
+         locaterSevcan.Register_Button.click();
+         locaterSevcan.vendorButton.click();
+@@ -23,34 +27,47 @@
+         locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty("fakecode"),Keys.TAB);
+         locaterSevcan.reSendCode.click();
+         locaterSevcan.vendorPassword1.sendKeys(("12345"),Keys.TAB);
++        extentTest.info("password 5 rakam girildi");
+ 
+         Assert.assertTrue(locaterSevcan.tooShort.isDisplayed());
++        extentTest.info("tooshort yazısı görüldü");
+ 
+         bekle(2);
+         ReusableMethods.tumSayfaResmi();
++        extentTest.info("tüm sayfa resmi alındı");
++        extentReports.flush();
+ 
+     }
+ 
+     @Test(priority = 2)
+     public void weak() {
++        extentTest=extentReports.createTest("weak","Test Raporu");
+ 
+         Driver.getDriver().get(ConfigReader.getProperty("url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
+         locaterSevcan.Register_Button.click();
+         locaterSevcan.vendorButton.click();
+         locaterSevcan.vendorEmail.sendKeys(ConfigReader.getProperty("fakemail"));
+         locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty("fakecode"));
+         locaterSevcan.reSendCode.click();
+-        locaterSevcan.vendorPassword1.sendKeys(("12345") + Keys.TAB);
+-        Assert.assertTrue(locaterSevcan.tooShort.isDisplayed());
++        locaterSevcan.vendorPassword1.sendKeys(("123456") + Keys.TAB);
++        extentTest.info("password 6 rakam girildi");
++
++        Assert.assertTrue(locaterSevcan.Weak.isDisplayed());
++        extentTest.info("weak yazısı görüldü");
+ 
+         bekle(2);
+         ReusableMethods.tumSayfaResmi();
++        extentTest.info("tüm sayfa resmi alındı");
++        extentReports.flush();
+ 
+     }
+ 
+     @Test(priority = 3)
+     public void good() {
++        extentTest=extentReports.createTest("good","Test Raporu");
+         Driver.getDriver().get(ConfigReader.getProperty("url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
+ 
+         locaterSevcan.Register_Button.click();
+         locaterSevcan.vendorButton.click();
+@@ -58,11 +75,15 @@
+         locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty("fakecode"));
+         locaterSevcan.reSendCode.click();
+         locaterSevcan.vendorPassword1.sendKeys(("AA.22aa")+Keys.TAB);
++        extentTest.info("password büyük küçük harf noktalama işareti ve rakam girildi");
+ 
+         Assert.assertTrue(locaterSevcan.good.isDisplayed());
++        extentTest.info("good yazısı görüldü");
+ 
+         bekle(2);
+         ReusableMethods.tumSayfaResmi();
++        extentTest.info("tüm sayfa resmi alındı");
++        extentReports.flush();
+ 
+ 
+ 
+@@ -70,8 +91,10 @@
+ 
+     @Test(priority = 4)
+     public void strong() {
++        extentTest=extentReports.createTest("strong","Test Raporu");
+ 
+         Driver.getDriver().get(ConfigReader.getProperty("url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
+ 
+         locaterSevcan.Register_Button.click();
+         locaterSevcan.vendorButton.click();
+@@ -79,11 +102,15 @@
+         locaterSevcan.verificationCode.sendKeys(ConfigReader.getProperty("fakecode"));
+         locaterSevcan.reSendCode.click();
+         locaterSevcan.vendorPassword1.sendKeys(("AA.22.aa.123456789") + Keys.TAB);
++        extentTest.info("password 12 karakterden oluşan büyük küçük harf noktalama işareti ve rakam girildi");
+ 
+         Assert.assertTrue(locaterSevcan.strong.isDisplayed());
++        extentTest.info("strong yazısı görüldü");
+ 
+         bekle(2);
+         ReusableMethods.tumSayfaResmi();
++        extentTest.info("tüm sayfa resmi alındı");
++        extentReports.flush();
+         Driver.closeDriver();
+ 
+ 
+Index: src/test/java/test/US01_US02_US10_Sevcan/US02.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package test.US01_US02_US10_Sevcan;\r\n\r\nimport org.openqa.selenium.Keys;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\nimport pages.CustomerRegisterLocates;\r\n\r\nimport utilities.ConfigReader;\r\nimport utilities.Driver;\r\nimport utilities.ReportMethods;\r\nimport utilities.ReusableMethods;\r\n\r\nimport static utilities.ReusableMethods.bekle;\r\n\r\npublic class US02 extends ReportMethods {\r\n\r\n        @Test\r\n        public void kayitliKullaniciKayitYapamamali() {\r\n            Driver.getDriver().get(ConfigReader.getProperty(\"url\"));\r\n            CustomerRegisterLocates locaterSevcan = new CustomerRegisterLocates();\r\n            locaterSevcan.Register_Button.click();\r\n            locaterSevcan.User_Name_Input.sendKeys(\r\n                    ConfigReader.getProperty(\"username\"), Keys.TAB,\r\n                    ConfigReader.getProperty(\"email\"), Keys.TAB,\r\n                    ConfigReader.getProperty(\"password\"));\r\n            locaterSevcan.Register_Policy_Check.click();\r\n            locaterSevcan.Singup_Button.click();\r\n            Assert.assertTrue(locaterSevcan.emailHataMesaji.isDisplayed());\r\n            bekle(3);\r\n            ReusableMethods.tumSayfaResmi();\r\n            Driver.closeDriver();\r\n\r\n        }\r\n    }\r\n\r\n\r\n
+===================================================================
+diff --git a/src/test/java/test/US01_US02_US10_Sevcan/US02.java b/src/test/java/test/US01_US02_US10_Sevcan/US02.java
+--- a/src/test/java/test/US01_US02_US10_Sevcan/US02.java	
++++ b/src/test/java/test/US01_US02_US10_Sevcan/US02.java	
+@@ -11,23 +11,41 @@
+ import utilities.ReusableMethods;
+ 
+ import static utilities.ReusableMethods.bekle;
++import static utilities.ReusableMethods.tumSayfaResmi;
+ 
+ public class US02 extends ReportMethods {
+ 
+         @Test
+         public void kayitliKullaniciKayitYapamamali() {
+-            Driver.getDriver().get(ConfigReader.getProperty("url"));
+-            CustomerRegisterLocates locaterSevcan = new CustomerRegisterLocates();
+-            locaterSevcan.Register_Button.click();
+-            locaterSevcan.User_Name_Input.sendKeys(
++            CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
++            extentTest = extentReports.createTest("US-02", "Test Raporu");
++
++            Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
++            extentTest.info("https://hubcomfy.com/ adresine gidildi");
++
++            customerRegesterPage.Register_Button.click();
++            extentTest.info("Resgister butonu tıklandı");
++
++            customerRegesterPage.User_Name_Input.sendKeys(
+                     ConfigReader.getProperty("username"), Keys.TAB,
+                     ConfigReader.getProperty("email"), Keys.TAB,
+                     ConfigReader.getProperty("password"));
+-            locaterSevcan.Register_Policy_Check.click();
+-            locaterSevcan.Singup_Button.click();
+-            Assert.assertTrue(locaterSevcan.emailHataMesaji.isDisplayed());
++            extentTest.info("username, email ve password girildi");
++
++            customerRegesterPage.Register_Policy_Check.click();
++            extentTest.info("checkbox tıklandı");
++
++            customerRegesterPage.Singup_Button.click();
++            extentTest.info("signup butonu tıklandı");
++
++            Assert.assertTrue(customerRegesterPage.emailHataMesaji.isDisplayed());
++            extentTest.info("hata mesajı görüntülendi");
+             bekle(3);
++
+             ReusableMethods.tumSayfaResmi();
++            extentTest.info("tüm sayfa resmi alındı");
++            bekle(3);
++
+             Driver.closeDriver();
+ 
+         }
+Index: src/test/java/test/US01_US02_US10_Sevcan/US01.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package test.US01_US02_US10_Sevcan;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\nimport pages.CustomerRegisterLocates;\r\nimport utilities.ConfigReader;\r\nimport utilities.Driver;\r\n\r\nimport static utilities.ReusableMethods.bekle;\r\nimport static utilities.ReusableMethods.fakerInput;\r\n\r\npublic class US01 {\r\n\r\n    @Test\r\n    public void TC_1 (){\r\n\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"Hubcomfy_Url\"));\r\n        CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();\r\n        String username = fakerInput(\"username\");\r\n        String email = fakerInput(\"email\");\r\n        String password = fakerInput(\"password\");\r\n\r\n        customerRegesterPage.Register_Button.click();\r\n        bekle(3);\r\n        Assert.assertTrue(customerRegesterPage.E_Mail_Input.isEnabled());\r\n        customerRegesterPage.User_Name_Input.sendKeys(username);\r\n        bekle(3);\r\n        Assert.assertTrue(customerRegesterPage.E_Mail_Input.isEnabled());\r\n        customerRegesterPage.E_Mail_Input.sendKeys(email);\r\n        bekle(3);\r\n        Assert.assertTrue(customerRegesterPage.Password_Input.isEnabled());\r\n        customerRegesterPage.Password_Input.sendKeys(password);\r\n        bekle(3);\r\n        Assert.assertTrue(customerRegesterPage.Register_Policy_Check.isEnabled());\r\n        customerRegesterPage.Register_Policy_Check.click();\r\n        bekle(3);\r\n        Assert.assertTrue(customerRegesterPage.Singup_Button.isEnabled());\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(3);\r\n        Assert.assertTrue(customerRegesterPage.Profile.isEnabled());\r\n//        customerRegesterPage.Profile.click();\r\n//        bekle(3);\r\n////\r\n////        customerRegesterPage.Sing_Out.click();\r\n////        bekle(3);\r\n        Driver.closeDriver();\r\n\r\n\r\n    }\r\n\r\n    @Test\r\n    public void TC_2 (){\r\n\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"Hubcomfy_Url\"));\r\n        CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();\r\n\r\n        customerRegesterPage.Register_Button.click();\r\n        bekle(3);\r\n\r\n        customerRegesterPage.E_Mail_Input.sendKeys(fakerInput(\"email\"));\r\n        bekle(3);\r\n        customerRegesterPage.Password_Input.sendKeys(fakerInput(\"password\"));\r\n        bekle(3);\r\n        customerRegesterPage.Register_Policy_Check.click();\r\n        bekle(3);\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(5);\r\n\r\n        customerRegesterPage.User_Name_Input.sendKeys(fakerInput(\"username\"));\r\n\r\n        customerRegesterPage.E_Mail_Input.clear();\r\n        bekle(3);\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(3);\r\n\r\n        customerRegesterPage.E_Mail_Input.sendKeys(fakerInput(\"email\"));\r\n\r\n        customerRegesterPage.Password_Input.clear();\r\n        bekle(3);\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(3);\r\n\r\n        customerRegesterPage.Password_Input.sendKeys(fakerInput(\"password\"));\r\n        customerRegesterPage.Register_Policy_Check.click();\r\n        bekle(3);\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(5);\r\n        Driver.closeDriver();\r\n\r\n    }\r\n\r\n    @Test\r\n    public void TC_3 (){\r\n\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"Hubcomfy_Url\"));\r\n        CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();\r\n\r\n        customerRegesterPage.Register_Button.click();\r\n        bekle(3);\r\n        customerRegesterPage.User_Name_Input.sendKeys(fakerInput(\"username\"));\r\n        bekle(3);\r\n        customerRegesterPage.E_Mail_Input.sendKeys(fakerInput(\"email\"));\r\n        bekle(3);\r\n        customerRegesterPage.Password_Input.sendKeys(fakerInput(\"password\"));\r\n        bekle(3);\r\n        customerRegesterPage.Register_Policy_Check.click();\r\n        bekle(3);\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(10);\r\n\r\n        Driver.closeDriver();\r\n\r\n    }\r\n\r\n    @Test\r\n    public void TC_4() {\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"Hubcomfy_Url\"));\r\n        CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();\r\n\r\n        customerRegesterPage.Register_Button.click();\r\n        bekle(3);\r\n        customerRegesterPage.User_Name_Input.sendKeys(fakerInput(\"username\"));\r\n        bekle(3);\r\n        customerRegesterPage.E_Mail_Input.sendKeys(\"asdwre\");\r\n        bekle(3);\r\n        customerRegesterPage.Password_Input.sendKeys(fakerInput(\"password\"));\r\n        bekle(3);\r\n        customerRegesterPage.Register_Policy_Check.click();\r\n        bekle(3);\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(5);\r\n\r\n        customerRegesterPage.E_Mail_Input.clear();\r\n        customerRegesterPage.E_Mail_Input.sendKeys(\"asdw@\");\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(5);\r\n\r\n        customerRegesterPage.E_Mail_Input.clear();\r\n        customerRegesterPage.E_Mail_Input.sendKeys(\"asdw@re\");\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(6);\r\n\r\n        customerRegesterPage.E_Mail_Input.clear();\r\n        customerRegesterPage.E_Mail_Input.sendKeys(\"as dw@re\");\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(10);\r\n\r\n        customerRegesterPage.E_Mail_Input.clear();\r\n        customerRegesterPage.Singup_Button.click();\r\n        Driver.closeDriver();\r\n    }\r\n\r\n    @Test\r\n    public void TC_5() {\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"Hubcomfy_Url\"));\r\n        CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();\r\n\r\n        customerRegesterPage.Register_Button.click();\r\n        bekle(3);\r\n        customerRegesterPage.User_Name_Input.sendKeys(fakerInput(\"username\"));\r\n        bekle(3);\r\n        customerRegesterPage.E_Mail_Input.sendKeys(fakerInput(\"email\"));\r\n        bekle(3);\r\n        customerRegesterPage.Password_Input.sendKeys(fakerInput(\"password\"));\r\n        bekle(3);\r\n        customerRegesterPage.Register_Policy_Check.click();\r\n        bekle(3);\r\n        customerRegesterPage.Singup_Button.click();\r\n        bekle(5);\r\n\r\n        Driver.closeDriver();\r\n    }\r\n}
+===================================================================
+diff --git a/src/test/java/test/US01_US02_US10_Sevcan/US01.java b/src/test/java/test/US01_US02_US10_Sevcan/US01.java
+--- a/src/test/java/test/US01_US02_US10_Sevcan/US01.java	
++++ b/src/test/java/test/US01_US02_US10_Sevcan/US01.java	
+@@ -1,19 +1,25 @@
+ package test.US01_US02_US10_Sevcan;
++
+ import org.testng.Assert;
+ import org.testng.annotations.Test;
+ import pages.CustomerRegisterLocates;
+ import utilities.ConfigReader;
+ import utilities.Driver;
++import utilities.ReportMethods;
++import utilities.ReusableMethods;
+ 
+ import static utilities.ReusableMethods.bekle;
+ import static utilities.ReusableMethods.fakerInput;
+ 
+-public class US01 {
++public class US01 extends ReportMethods {
+ 
+     @Test
+-    public void TC_1 (){
++    public void TC_1() {
++        extentTest = extentReports.createTest("TC-01", "Test Raporu");
+ 
+         Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
++
+         CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
+         String username = fakerInput("username");
+         String email = fakerInput("email");
+@@ -21,90 +27,164 @@
+ 
+         customerRegesterPage.Register_Button.click();
+         bekle(3);
+-        Assert.assertTrue(customerRegesterPage.E_Mail_Input.isEnabled());
++        extentTest.info("Register Butonu tıklandı");
++
++        Assert.assertTrue(customerRegesterPage.User_Name_Input.isEnabled());
++        extentTest.info("Username kutusu görüntülendi");
+         customerRegesterPage.User_Name_Input.sendKeys(username);
++        extentTest.info("Username kutusuna username girildi");
+         bekle(3);
++
+         Assert.assertTrue(customerRegesterPage.E_Mail_Input.isEnabled());
++        extentTest.info("Email kutusu görüntülendi");
+         customerRegesterPage.E_Mail_Input.sendKeys(email);
++        extentTest.info("Email kutusuna email girildi");
+         bekle(3);
++
+         Assert.assertTrue(customerRegesterPage.Password_Input.isEnabled());
++        extentTest.info("Password kutusu görüntülendi");
+         customerRegesterPage.Password_Input.sendKeys(password);
++        extentTest.info("Password kutusuna password girildi");
+         bekle(3);
++
+         Assert.assertTrue(customerRegesterPage.Register_Policy_Check.isEnabled());
++        extentTest.info("Register Policy Checkbox kutusu görüntülendi");
+         customerRegesterPage.Register_Policy_Check.click();
++        extentTest.info("Register Policy Checkbox kutusu tıklandı");
+         bekle(3);
++
+         Assert.assertTrue(customerRegesterPage.Singup_Button.isEnabled());
++        extentTest.info("signup butonu görüntülendi");
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup butonu tıklandı");
++        bekle(3);
++
++        Assert.assertTrue(customerRegesterPage.shopNowText.isDisplayed());
++        extentTest.info("shop now yazısı görüntülendi");
++        bekle(3);
++
++        Assert.assertTrue(customerRegesterPage.signoutButton.isDisplayed());
++        extentTest.info("sign out butonu görüntülendi");
++        customerRegesterPage.signoutButton.click();
++        extentTest.info("signout butonu tıklandı");
+         bekle(3);
+-        Assert.assertTrue(customerRegesterPage.Profile.isEnabled());
+-//        customerRegesterPage.Profile.click();
+-//        bekle(3);
+-////
+-////        customerRegesterPage.Sing_Out.click();
+-////        bekle(3);
++
++        Assert.assertTrue(customerRegesterPage.logoutButton.isDisplayed());
++        extentTest.info("logout butonu görüntülendi");
++        customerRegesterPage.logoutButton.click();
++        extentTest.info("logout butonu tıklandı");
++        extentReports.flush();
++
+         Driver.closeDriver();
+-
+-
+     }
+ 
+     @Test
+-    public void TC_2 (){
+-
+-        Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
++    public void TC_2() {
+         CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
++        extentTest = extentReports.createTest("TC-02", "Test Raporu");
++
++        Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
+ 
+         customerRegesterPage.Register_Button.click();
++        extentTest.info("Register Butonu tıklandı");
+         bekle(3);
+ 
++        extentTest.info("username boş bırakıldı");
++
+         customerRegesterPage.E_Mail_Input.sendKeys(fakerInput("email"));
++        extentTest.info("email girildi");
+         bekle(3);
++
+         customerRegesterPage.Password_Input.sendKeys(fakerInput("password"));
++        extentTest.info("password girildi");
+         bekle(3);
++
+         customerRegesterPage.Register_Policy_Check.click();
++        extentTest.info("checkbox tıklandı");
+         bekle(3);
++
+         customerRegesterPage.Singup_Button.click();
+-        bekle(5);
+-
+-        customerRegesterPage.User_Name_Input.sendKeys(fakerInput("username"));
+-
+-        customerRegesterPage.E_Mail_Input.clear();
++        extentTest.info("signup buton tıklandı");
+         bekle(3);
+-        customerRegesterPage.Singup_Button.click();
++
++        ReusableMethods.tumSayfaResmi("username_bos");
++        extentTest.info("tum sayfa resmi alındı");
++
++        customerRegesterPage.User_Name_Input.sendKeys(fakerInput("username"));
++        extentTest.info("username girildi");
+         bekle(3);
+ 
++        customerRegesterPage.E_Mail_Input.clear();
++
+         customerRegesterPage.E_Mail_Input.sendKeys(fakerInput("email"));
++        extentTest.info("email girildi");
++        bekle(3);
+ 
+         customerRegesterPage.Password_Input.clear();
++        extentTest.info("girilmiş olan password silinidi");
+         bekle(3);
++
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup butonu tıklandı");
+         bekle(3);
+ 
++        ReusableMethods.tumSayfaResmi("password bos");
++        extentTest.info("tum sayfa resmi alındı");
++
+         customerRegesterPage.Password_Input.sendKeys(fakerInput("password"));
++        extentTest.info("password girildi");
++
++        customerRegesterPage.Register_Policy_Check.click();
++        extentTest.info("checkbox tıklandı");
++        bekle(3);
++
++        ReusableMethods.tumSayfaResmi("checkbok tıklanmalı");
++        extentTest.info("tum sayfa resmi alındı");
++
++        customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup butonu tıklandı");
++        bekle(5);
++
+         customerRegesterPage.Register_Policy_Check.click();
++        extentTest.info("checkbox tıklandı");
+         bekle(3);
++
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup butonu tıklandı");
+         bekle(5);
++
++        extentReports.flush();
+         Driver.closeDriver();
+-
+     }
+ 
+     @Test
+-    public void TC_3 (){
++    public void TC_3() {
++        CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
++
++        extentTest = extentReports.createTest("TC-03", "Test Raporu");
+ 
+         Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
+-        CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
++
+ 
+         customerRegesterPage.Register_Button.click();
++        extentTest.info("Register butonuna tıklandı");
+         bekle(3);
+         customerRegesterPage.User_Name_Input.sendKeys(fakerInput("username"));
++        extentTest.info("username girildi");
+         bekle(3);
+         customerRegesterPage.E_Mail_Input.sendKeys(fakerInput("email"));
++        extentTest.info("email girildi");
+         bekle(3);
+         customerRegesterPage.Password_Input.sendKeys(fakerInput("password"));
++        extentTest.info("password girildi");
+         bekle(3);
+         customerRegesterPage.Register_Policy_Check.click();
++        extentTest.info("checkbox tıklandı");
+         bekle(3);
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup tıklandı");
+         bekle(10);
+ 
+         Driver.closeDriver();
+@@ -113,60 +193,92 @@
+ 
+     @Test
+     public void TC_4() {
+-        Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
+         CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
+ 
++        extentTest = extentReports.createTest("TC-04", "Test Raporu");
++
++        Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
++
+         customerRegesterPage.Register_Button.click();
++        extentTest.info("Register butonu tıklandı");
+         bekle(3);
+         customerRegesterPage.User_Name_Input.sendKeys(fakerInput("username"));
++        extentTest.info("username girildi");
+         bekle(3);
+         customerRegesterPage.E_Mail_Input.sendKeys("asdwre");
++        extentTest.info("email girildi");
+         bekle(3);
+         customerRegesterPage.Password_Input.sendKeys(fakerInput("password"));
++        extentTest.info("password girildi");
+         bekle(3);
+         customerRegesterPage.Register_Policy_Check.click();
++        extentTest.info("checkbox tıklandı");
+         bekle(3);
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup tıklandı");
+         bekle(5);
+ 
+         customerRegesterPage.E_Mail_Input.clear();
++        extentTest.info("bir önceki girilen email silindi");
+         customerRegesterPage.E_Mail_Input.sendKeys("asdw@");
++        extentTest.info("email girildi");
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup butonu tıklandı");
+         bekle(5);
+ 
+         customerRegesterPage.E_Mail_Input.clear();
++        extentTest.info("bir önceki girilen email silindi ");
+         customerRegesterPage.E_Mail_Input.sendKeys("asdw@re");
++        extentTest.info("email girildi");
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup butonu tıklandı");
+         bekle(6);
+ 
+         customerRegesterPage.E_Mail_Input.clear();
++        extentTest.info("bir önceki girilen email silindi ");
+         customerRegesterPage.E_Mail_Input.sendKeys("as dw@re");
++        extentTest.info("email girildi");
+         customerRegesterPage.Singup_Button.click();
++        extentTest.info("signup butonu tıklandı");
+         bekle(10);
+ 
+         customerRegesterPage.E_Mail_Input.clear();
++        extentTest.info("bir önceki girilen email silindi ");
+         customerRegesterPage.Singup_Button.click();
+-        Driver.closeDriver();
++        extentTest.info("signup butonu tıklandı");
++       Driver.closeDriver();
+     }
+ 
+     @Test
+     public void TC_5() {
+-        Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
+         CustomerRegisterLocates customerRegesterPage = new CustomerRegisterLocates();
+ 
++        extentTest = extentReports.createTest("TC-05", "Test Raporu");
++
++        Driver.getDriver().get(ConfigReader.getProperty("Hubcomfy_Url"));
++        extentTest.info("https://hubcomfy.com/ adresine gidildi");
++
+         customerRegesterPage.Register_Button.click();
++        extentTest.info("Register butonuna tıklandı");
+         bekle(3);
+         customerRegesterPage.User_Name_Input.sendKeys(fakerInput("username"));
++        extentTest.info("username girildi");
+         bekle(3);
+         customerRegesterPage.E_Mail_Input.sendKeys(fakerInput("email"));
++        extentTest.info("email girildi");
+         bekle(3);
+         customerRegesterPage.Password_Input.sendKeys(fakerInput("password"));
++        extentTest.info("password girildi");
+         bekle(3);
+         customerRegesterPage.Register_Policy_Check.click();
++        extentTest.info("checkbox tıklandı");
+         bekle(3);
+         customerRegesterPage.Singup_Button.click();
+-        bekle(5);
++        extentTest.info("signup tıklandı");
++        bekle(10);
+ 
+         Driver.closeDriver();
++
+     }
+ }
+\ No newline at end of file
+Index: src/test/java/pages/CustomerRegisterLocates.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\n\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\nimport org.openqa.selenium.support.PageFactory;\r\nimport utilities.Driver;\r\n\r\npublic class CustomerRegisterLocates {\r\n    //US_01_02\r\n\r\n    public CustomerRegisterLocates() {\r\n        PageFactory.initElements(Driver.getDriver(), this);\r\n    }\r\n\r\n    @FindBy(xpath = \"//*[@id='header']/div/div/div/div/div/div[9]/div/div/a[2]/span\")\r\n\r\n    public WebElement Register_Button;\r\n\r\n    @FindBy(xpath = \"/html/body/div[2]/header/div/div/div/div/div/div[9]/div/div/a[1]\")\r\n\r\n    public WebElement sign_In_Buton;\r\n\r\n    @FindBy(id = \"reg_username\")\r\n    public WebElement User_Name_Input;\r\n\r\n    @FindBy(xpath = \"//*[@id='reg_email']\")\r\n    public WebElement E_Mail_Input;\r\n\r\n    @FindBy(xpath = \"//*[@id='reg_password']\")\r\n    public WebElement Password_Input;\r\n\r\n    @FindBy(xpath = \"//*[@id='register-policy']\")\r\n    public WebElement Register_Policy_Check;\r\n\r\n    @FindBy(xpath = \"//*[@id='signup']/form/button\")\r\n    public WebElement Singup_Button;\r\n\r\n    @FindBy(xpath = \"//*[@id='header']/div/div/div/div/div/div[9]/div/div/a\")\r\n    public WebElement Profile;\r\n\r\n    @FindBy(xpath = \"//*[@id='main']/div/div/div/div/div/div/nav/ul/li[10]/a\")\r\n    public WebElement Sing_Out;\r\n\r\n\r\n    //////////..............US-02...................//////////////\r\n\r\n    @FindBy (xpath = \"(//p[@class='submit-status'])[2]\")\r\n    public WebElement emailHataMesaji;\r\n\r\n\r\n    /////////////...............US-10................./////////////\r\n    @FindBy(xpath = \"//a[text()='Become a Vendor']\")\r\n    public WebElement vendorButton;\r\n    @FindBy (xpath = \"//input[@id='user_email']\")\r\n    public WebElement vendorEmail;\r\n    @FindBy (xpath = \"(//input[@type='text'])[2]\")\r\n    public WebElement verificationCode;\r\n    @FindBy (xpath = \"//input[@type='button']\")\r\n    public WebElement reSendCode;\r\n    @FindBy (xpath = \"(//input[@type='password'])[1]\")\r\n    public WebElement vendorPassword1;\r\n    @FindBy (xpath = \"(//input[@type='password'])[2]\")\r\n    public WebElement vendorPassword2;\r\n    @FindBy (xpath = \"//input[@type='submit']\")\r\n    public WebElement vendorRegister;\r\n\r\n\r\n    @FindBy(xpath = \"//*[text()='Too short']\")//passwordda kisa oldu dogrulama\r\n    public WebElement tooShort;\r\n    @FindBy(xpath = \"//*[text()='Weak']\")//passwordda zayif oldugunu dogrulama\r\n    public WebElement Weak;\r\n    @FindBy(xpath = \"//*[@id='password_strength']\")//paasword kisminda olan paralo gucu en az good seviyesinde olmalidir dogrulama\r\n    public WebElement good;\r\n    @FindBy(xpath = \"//div[@class='wcfm-message wcfm-error']\")\r\n    public WebElement zayifveyakisaOlanPass;//zayif veya kisa oldugu durumlarda cikan uyari\r\n    @FindBy(xpath = \"//div[@class='strong']\")\r\n    public WebElement strong;\r\n\r\n\r\n}\r\n\r\n
+===================================================================
+diff --git a/src/test/java/pages/CustomerRegisterLocates.java b/src/test/java/pages/CustomerRegisterLocates.java
+--- a/src/test/java/pages/CustomerRegisterLocates.java	
++++ b/src/test/java/pages/CustomerRegisterLocates.java	
+@@ -35,11 +35,16 @@
+     @FindBy(xpath = "//*[@id='signup']/form/button")
+     public WebElement Singup_Button;
+ 
+-    @FindBy(xpath = "//*[@id='header']/div/div/div/div/div/div[9]/div/div/a")
++    @FindBy(id = "e9b716e")
+     public WebElement Profile;
+ 
+-    @FindBy(xpath = "//*[@id='main']/div/div/div/div/div/div/nav/ul/li[10]/a")
+-    public WebElement Sing_Out;
++    @FindBy(xpath = "//span[text()='Sign Out']")
++    public WebElement signoutButton;
++
++    @FindBy(xpath = "(//a[text()='Shop Now'])[2]")
++    public WebElement shopNowText;
++    @FindBy(xpath = "//a[text()='Log out']")
++    public WebElement logoutButton;
+ 
+ 
+     //////////..............US-02...................//////////////

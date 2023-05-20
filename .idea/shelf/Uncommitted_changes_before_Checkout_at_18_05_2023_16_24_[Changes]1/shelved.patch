@@ -1,0 +1,238 @@
+Index: Configuration.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>browser=chrome\r\nurl=https://hubcomfy.com/\r\nusername=z\r\nemail=z@gmail.com\r\npassword=123456789101112.
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/Configuration.properties b/Configuration.properties
+--- a/Configuration.properties	
++++ b/Configuration.properties	
+@@ -1,5 +1,183 @@
+ browser=chrome
+ url=https://hubcomfy.com/
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++//US01
+ username=z
+ email=z@gmail.com
+-password=123456789101112.
+\ No newline at end of file
++password=123456789101112.
++
++//US10
++fakemail1=drevyn.riyan@fullangle.org
++fakecode1=315828
++
++
++
++
+Index: src/test/java/pages/LocaterSevcan.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\n\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\nimport org.openqa.selenium.support.PageFactory;\r\nimport utilities.Driver;\r\n\r\npublic class LocaterSevcan {\r\n    public LocaterSevcan (){\r\n        PageFactory.initElements(Driver.getDriver(),this);\r\n    }\r\n    @FindBy(xpath = \"//a[@class='register inline-type']\")\r\n    public WebElement register;\r\n    @FindBy(xpath = \"//input[@id='reg_username']\")\r\n    public WebElement username;\r\n    @FindBy(xpath = \"//input[@id='reg_email']\")\r\n    public WebElement email;\r\n    @FindBy(xpath = \"//input[@id='reg_password']\")\r\n    public WebElement password;\r\n    @FindBy(xpath = \"//label[text()='I agree to the privacy policy']\")\r\n    public WebElement radioButton;\r\n    @FindBy (xpath = \"(//button[@type='submit'])[2]\")\r\n    public WebElement signupButton;\r\n    @FindBy(xpath = \"(//a[text()='Shop Now'])[2]\")\r\n    public WebElement shopNowText;\r\n    @FindBy(xpath = \"//p[text()='Please enter a valid account username.']\")\r\n    public WebElement usernameUyariMesaji;\r\n    @FindBy(xpath = \"//p[text()='Username may not be longer than 60 characters.']\")\r\n    public WebElement usernameFazlaysaUyariMesaji;\r\n\r\n\r\n    //////////..............US-02...................//////////////\r\n\r\n    @FindBy (xpath = \"(//p[@class='submit-status'])[2]\")\r\n    public WebElement emailHataMesaji;\r\n\r\n\r\n    /////////////...............US-10................./////////////\r\n    @FindBy(xpath = \"//a[text()='Become a Vendor']\")\r\n    public WebElement vendorButton;\r\n    @FindBy (xpath = \"//input[@id='user_email']\")\r\n    public WebElement vendorEmail;\r\n    @FindBy (xpath = \"(//input[@type='text'])[2]\")\r\n    public WebElement verificationCode;\r\n    @FindBy (xpath = \"//input[@type='button']\")\r\n    public WebElement reSendCode;\r\n    @FindBy (xpath = \"(//input[@type='password'])[1]\")\r\n    public WebElement vendorPassword1;\r\n    @FindBy (xpath = \"(//input[@type='password'])[2]\")\r\n    public WebElement vendorPassword2;\r\n    @FindBy (xpath = \"//input[@type='submit']\")\r\n    public WebElement vendorRegister;\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/pages/LocaterSevcan.java b/src/test/java/pages/LocaterSevcan.java
+--- a/src/test/java/pages/LocaterSevcan.java	
++++ b/src/test/java/pages/LocaterSevcan.java	
+@@ -6,10 +6,11 @@
+ import utilities.Driver;
+ 
+ public class LocaterSevcan {
+-    public LocaterSevcan (){
++    public LocaterSevcan(){
+         PageFactory.initElements(Driver.getDriver(),this);
+     }
+-    @FindBy(xpath = "//a[@class='register inline-type']")
++    //@FindBy(xpath = "//a[@class='register inline-type']")
++    @FindBy(xpath = "//span[text()='Register']")
+     public WebElement register;
+     @FindBy(xpath = "//input[@id='reg_username']")
+     public WebElement username;
+@@ -51,5 +52,17 @@
+     @FindBy (xpath = "//input[@type='submit']")
+     public WebElement vendorRegister;
+ 
++    @FindBy(xpath = "//*[text()='Too short']")//passwordda kisa oldu dogrulama
++    public WebElement tooShort;
++    @FindBy(xpath = "//*[text()='Weak']")//passwordda zayif oldugunu dogrulama
++    public WebElement Weak;
++    @FindBy(xpath = "//*[@id='password_strength']")//paasword kisminda olan paralo gucu en az good seviyesinde olmalidir dogrulama
++    public WebElement good;
++    @FindBy(xpath = "//div[@class='wcfm-message wcfm-error']")
++    public WebElement zayifveyakisaOlanPass;//zayif veya kisa oldugu durumlarda cikan uyari
++    @FindBy(xpath = "//div[@class='strong']")
++    public WebElement strong;
++
++
+ }
+ 
