@@ -6,12 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TestNG_Projemiz-Team7" />
         <module name="Deneme123" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+ 
+      <module name="Deneme123" target="19" />
+
       <module name="Deneme123" target="11" />
+
     </bytecodeTargetLevel>
   </component>
 </project>
