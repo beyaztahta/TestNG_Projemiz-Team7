@@ -18,7 +18,7 @@ public class US04_Gonul extends ReportMethods {
 
 
     @Test
-    public void testCaseC01() {
+    public void testCase01() {
 
         extentTest= extentReports.createTest("US4-TC01","Shipping adres ekleyebilme");
 
@@ -28,7 +28,8 @@ public class US04_Gonul extends ReportMethods {
         extentTest.info("Hubconfy sayfasına gidildi");
 
 //      Kullanıcı Register butonunu tıklar.
-        locaterGonul.userRegisterButton.click();
+        ReusableMethods.bekle(3);
+        ReusableMethods.click(locaterGonul.userRegisterButton);
 
 //      UserName ,email,password kutularına valid bir deger girer.
         locaterGonul.userNameBox.sendKeys(faker.name().username());
@@ -112,13 +113,13 @@ public class US04_Gonul extends ReportMethods {
 
         locaterGonul.signoutButton.click();
         locaterGonul.logoutButton.click();
-        extentTest.pass("Test işlemi sonlandırıldı");
+
 
 
     }
 
     @Test
-    public void TC02() {
+    public void testCase02() {
 
 //First name, Last name, Country/Region, Street address, Town / City, State ve ZIP Code  boş bırakılır.
 
@@ -150,7 +151,6 @@ public class US04_Gonul extends ReportMethods {
         Assert.assertTrue(locaterGonul.homePageLogo.isDisplayed());
         ReusableMethods.bekle(3);
         extentTest.info("MyAccount sayfasına erişildiği doğrulandı.");
-
 
 //     Sayfanın en altındaki My Account butonuna tıklar.
 
@@ -207,8 +207,8 @@ public class US04_Gonul extends ReportMethods {
         extentTest.info("Doldurulması zorunlu alanlar boş bırakılamaz yazısının göründüğü doğrulandı");
 
 
+        locaterGonul.signoutButton.click();
+        locaterGonul.logoutButton.click();
         Driver.closeDriver();
-        extentTest.pass("Test işlemi bitti.");
-
     }
 }

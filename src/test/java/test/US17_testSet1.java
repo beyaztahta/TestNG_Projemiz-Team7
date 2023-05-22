@@ -154,9 +154,6 @@ public class US17_testSet1 extends ReportMethods {
         extentTest.pass("Yüklenmesi istenen foto, localden sayfaya transfer edildi. ");
         r.delay(5000);
 
-
-
-
     }
     @Test  (priority = -4)//description iframe  alanı
     public void tc2_description () throws FileNotFoundException, AWTException {

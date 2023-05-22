@@ -9,9 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.LocaterMali;
 import pages.LocaterSerap;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReportMethods;
 import utilities.ReusableMethods;
 
 import java.text.SimpleDateFormat;
@@ -19,7 +21,7 @@ import java.util.Date;
 
 import static utilities.ReusableMethods.bekle;
 
-public class US06_Serap {
+public class US06_Serap  {
 
     LocaterSerap serap = new LocaterSerap();
     Actions actions;
@@ -27,26 +29,9 @@ public class US06_Serap {
     protected static ExtentReports extentReports;
     protected static ExtentHtmlReporter extentHtmlReporter;
     protected static ExtentTest extentTest;
-
     @BeforeClass
     public void beforeTest() {
-        extentReports = new ExtentReports();
-        String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
-        String dosyaYolu = "TestOutput/extentReport/AOK/US21" + tarih + ".html";
-        extentHtmlReporter = new ExtentHtmlReporter(dosyaYolu);
-        extentReports.attachReporter(extentHtmlReporter);
-        extentReports.setSystemInfo("Browser", "Chrome");
-        extentReports.setSystemInfo("QA", "Serap Kilinc");
-        extentHtmlReporter.config().setDocumentTitle("Extent Report");
-        extentHtmlReporter.config().setReportName("Test Raporu");
-        extentTest = extentReports.createTest("ExtentTest", "Test Raporu");
-
-        //Kullanici url e gider
-        Driver.getDriver().get(ConfigReader.getProperty("hubcomfy_Url"));
-        extentTest.info("Kullanicinin url e gittigi gorulur");
-        //Kullanici sayfanin sag ustunde bulunan sign in butonuna tiklar
-        serap.signInButton.click();
-        extentTest.info("Kullanicinin sign-in butonuna tikladigi gorulur");
+        extentReports = new ExtentReports();String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());String dosyaYolu = "TestOutput/extentReport/AOK/US21" + tarih + ".html";extentHtmlReporter = new ExtentHtmlReporter(dosyaYolu);extentReports.attachReporter(extentHtmlReporter);extentReports.setSystemInfo("Browser", "Chrome");extentReports.setSystemInfo("QA", "Serap Kilinc");extentHtmlReporter.config().setDocumentTitle("Extent Report");extentHtmlReporter.config().setReportName("Test Raporu");extentTest = extentReports.createTest("ExtentTest", "Test Raporu");//Kullanici url e giderDriver.getDriver().get(ConfigReader.getProperty("Url"));extentTest.info("Kullanicinin url e gittigi gorulur");//Kullanici sayfanin sag ustunde bulunan sign in butonuna tiklarserap.signInButton.click();extentTest.info("Kullanicinin sign-in butonuna tikladigi gorulur");
         //Kullanici username or adress box ina  valid bir deger girer  Kullanici password box ina valid deger girer
         serap.signInUsername.sendKeys(ConfigReader.getProperty("serap"), Keys.TAB);
         serap.signInPassword.sendKeys(ConfigReader.getProperty("kilinc"));

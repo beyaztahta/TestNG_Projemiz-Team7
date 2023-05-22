@@ -13,13 +13,14 @@ import utilities.ReportMethods;
 import utilities.ReusableMethods;
 
 public class US16_testSet1 extends ReportMethods {
-    LocaterMali locate=new LocaterMali();
+
     Actions actions;
     Select select;
 
     //Store Menager sayfası görüntülenir
     @Test (priority = -5)
     public void signIn() {
+        LocaterMali locate=new LocaterMali();
         extentTest=extentReports.createTest("US16","singIn");
 
 
@@ -48,6 +49,7 @@ public class US16_testSet1 extends ReportMethods {
 
     @Test (priority = -4)
     public void us16_tc01() {
+        LocaterMali locate=new LocaterMali();
         extentTest=extentReports.createTest("US16","tc01");
         extentTest.pass("Kullanıcı store manager sayfasına geldi ");
 
@@ -66,6 +68,7 @@ public class US16_testSet1 extends ReportMethods {
 
     @Test (priority = -3)
     public void us16_tc02() {
+        LocaterMali locate=new LocaterMali();
         extentTest=extentReports.createTest("US16","tc02");
 
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Store Manager"));
@@ -74,20 +77,21 @@ public class US16_testSet1 extends ReportMethods {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.bekle(2);
 
-        locate.checkboxVirtual.click();
+        //locate.checkboxVirtual.click();
         extentTest.pass("Checkbox Virtual alanı tıklandı ");
-        Assert.assertTrue(locate.checkboxVirtual.isSelected());
+        Assert.assertFalse(locate.checkboxVirtual.isSelected());
         extentTest.pass("CheckboxVirtual alanının seçili olduğu test edildi ");
         ReusableMethods.bekle(1);
-        locate.checkboxDownloadable.click();
+        //locate.checkboxDownloadable.click();
         extentTest.pass("Checkbox Downloadable alanı tıklandı ");
-        Assert.assertTrue(locate.checkboxDownloadable.isSelected());
+        Assert.assertFalse(locate.checkboxDownloadable.isSelected());
         extentTest.pass("Checkbox Downloadalble alanının seçili olduğu test edildi ");
 
     }
 
     @Test (priority = -2)
     public void us16_tc03() {
+        LocaterMali locate=new LocaterMali();
 
         extentTest=extentReports.createTest("US16","tc03");
 

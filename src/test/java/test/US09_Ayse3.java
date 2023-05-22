@@ -23,7 +23,7 @@ public class US09_Ayse3 extends ReportMethods {
         extentTest = extentReports.createTest("Hubcomfy", "Girilen maile onay mailinin gitmesi");
         ac01.start();
         //Vendor abc@abc.com adresini girer
-        locaterOguzhan.email.sendKeys("abc@abc.com");
+        locaterOguzhan.e_mail.sendKeys("abc@abc.com");
         extentTest.info("Mail adresi girildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);

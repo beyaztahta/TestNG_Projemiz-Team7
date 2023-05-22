@@ -20,11 +20,12 @@ import static utilities.ReusableMethods.*;
 
 
 public class US14_Elif1 extends ReportMethods {
-    LocaterElif locater = new LocaterElif();
+
     Actions actions = new Actions(Driver.getDriver());
 
     @Test
     public void testCase01() {
+        LocaterElif locater = new LocaterElif();
         extentTest = extentReports.createTest("US14", "Simple Product, Variable Product, Grouped Product, External - Affiliate Product seçenekleri olmalı");
 
         //Kullaınıcı https:// www.hubcomfy.com/ adresine gider
@@ -85,6 +86,7 @@ public class US14_Elif1 extends ReportMethods {
 
     @Test
     public void testCase02() throws AWTException {
+        LocaterElif locater = new LocaterElif();
         extentTest = extentReports.createTest("US14", "Ürün fotoğrafı eklenebilmeli");
 
         //Kullaınıcı https:// www.hubcomfy.com/ adresine gider
@@ -135,7 +137,7 @@ public class US14_Elif1 extends ReportMethods {
         extentTest.pass("ACILAN SAYFADA SELECT FILES BUTONUNA TIKLANDI.");
 
         //Kullanıcı urun resmını upload eder.
-        String path = "C://Users//hp//Desktop//wallpaperbetter.com_1920x1080 (1).jpg/";
+        String path = "\"C:\\Users\\Lenovo\\Desktop\\THANKS.png\"";
         System.getProperty("Driver.getDriver()", path);
         StringSelection s = new StringSelection(path);
         Robot r = new Robot();
@@ -161,6 +163,7 @@ public class US14_Elif1 extends ReportMethods {
 
     @Test
     public void testCase03() {
+        LocaterElif locater = new LocaterElif();
         extentTest = extentReports.createTest("US14", "Product Title, Short Description ve Description yazılabilmeli");
 
         //Kullaınıcı https:// www.hubcomfy.com/ adresine gider

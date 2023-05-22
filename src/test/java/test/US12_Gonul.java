@@ -16,7 +16,7 @@ public class US12_Gonul extends ReportMethods {
     LocaterGonul locaterGonul = new LocaterGonul();
     Faker faker = new Faker();
 
-  @Test
+    @Test
     public void testCase01() {
         extentTest=extentReports.createTest("Hubcomfy US-12-TC01,TC02","Billing Adress eklenebilmesi");
 //      Kullanici ana sayfaya gider
@@ -41,10 +41,10 @@ public class US12_Gonul extends ReportMethods {
         extentTest.info("Vendor olarak sign in işlemi yapıldı.");
 
 //     Sayfanın en altındaki My Account butonuna tıklar.
-      ReusableMethods.scroll(locaterGonul.myAccountButonu);
-      ReusableMethods.bekle(3);
-      locaterGonul.myAccountButonu.click();
-      extentTest.info("MyAccount butonuna tıklandı.");
+        ReusableMethods.scroll(locaterGonul.myAccountButonu);
+        ReusableMethods.bekle(3);
+        locaterGonul.myAccountButonu.click();
+        extentTest.info("MyAccount butonuna tıklandı.");
 
 //      Acılan sayfada Adres butonuna tıklar.
         ReusableMethods.bekle(3);
@@ -57,23 +57,23 @@ public class US12_Gonul extends ReportMethods {
         extentTest.info("Edit Your Billing Address butonuna tıklandı.");
 
 //        Kullanıcı first name girer.
-          ReusableMethods.bekle(2);
-          locaterGonul.billingfirstName.clear();
-          locaterGonul.billingfirstName.sendKeys(faker.name().firstName());
+        ReusableMethods.bekle(2);
+        locaterGonul.billingfirstName.clear();
+        locaterGonul.billingfirstName.sendKeys(faker.name().firstName());
 
 //        Kullanıcı last name girer.
-          locaterGonul.billinglastName.clear();
-          locaterGonul.billinglastName.sendKeys(faker.name().lastName()+ Keys.TAB+Keys.TAB);
+        locaterGonul.billinglastName.clear();
+        locaterGonul.billinglastName.sendKeys(faker.name().lastName()+ Keys.TAB+Keys.TAB);
 
 
 //        Kullanıcı country girer.
-          Select select = new Select(locaterGonul.country);
-          select.selectByVisibleText("Albania");
+        Select select = new Select(locaterGonul.country);
+        select.selectByVisibleText("Albania");
 
 //        Kullanıcı Street adress girer
-          ReusableMethods.bekle(3);
-          locaterGonul.billingstreet.clear();
-          locaterGonul.billingstreet.sendKeys(faker.address().fullAddress());
+        ReusableMethods.bekle(3);
+        locaterGonul.billingstreet.clear();
+        locaterGonul.billingstreet.sendKeys(faker.address().fullAddress());
 
 
 //        Kullanıcı city girer.
@@ -86,15 +86,15 @@ public class US12_Gonul extends ReportMethods {
 
 
 //       Kullanıcı postcode girer.
-          ReusableMethods.bekle(3);
-          locaterGonul.billingpostcode.clear();
-          locaterGonul.billingpostcode.sendKeys(faker.address().zipCode());
+        ReusableMethods.bekle(3);
+        locaterGonul.billingpostcode.clear();
+        locaterGonul.billingpostcode.sendKeys(faker.address().zipCode());
 
 //        Kullanıcı phone girer.
-          ReusableMethods.bekle(3);
-          locaterGonul.billingphone.clear();
-          locaterGonul.billingphone.sendKeys("05431123456");
-          extentTest.info("Adres sayfasında doldurulmasi gereken zorunlu alanlar eksiksiz dolduruldu.");
+        ReusableMethods.bekle(3);
+        locaterGonul.billingphone.clear();
+        locaterGonul.billingphone.sendKeys("05431123456");
+        extentTest.info("Adres sayfasında doldurulmasi gereken zorunlu alanlar eksiksiz dolduruldu.");
 
 
 //       Kullanıcı Save Adress butonunu tıklar.
@@ -102,9 +102,9 @@ public class US12_Gonul extends ReportMethods {
         ReusableMethods.click(locaterGonul.billingsaveAdress);
 
 
-       ReusableMethods.bekle(4);
+        ReusableMethods.bekle(4);
         locaterGonul.signoutButton.click();
-       locaterGonul.logoutButton.click();
+        locaterGonul.logoutButton.click();
 
 
     }
@@ -176,7 +176,6 @@ public class US12_Gonul extends ReportMethods {
         Select select1 = new Select(locaterGonul.ddmcounty);
         select1.selectByIndex(1);
 
-
 //      Kullanıcı postcode girer.
         ReusableMethods.bekle(3);
         locaterGonul.billingpostcode.clear();
@@ -189,7 +188,7 @@ public class US12_Gonul extends ReportMethods {
 
 
 
-//      Kayıtlı email adresi sayfaya otomatik gelir
+//     Kayıtlı email adresi sayfaya otomatik gelir
         ReusableMethods.bekle(3);
         Assert.assertEquals(ConfigReader.getProperty("VendorEmail"),"biolog3425@gmail.com");
         extentTest.info("mail adresinin kayit olunan email adresiyle ayni oldugu dogrulandı.");
@@ -199,9 +198,9 @@ public class US12_Gonul extends ReportMethods {
         ReusableMethods.click(locaterGonul.billingsaveAdress);
 
 //       Kayıt edilen adresin Billing adres olarak kayıt edildigi dogrulanır.
-         ReusableMethods.bekle(3);
-         Assert.assertTrue(locaterGonul.successMessage.getText().contains("Address changed successfully."));
-         extentTest.info("Degişiklik billing adrese eklendi yazısının göründüğü doğrulandı.");
+        ReusableMethods.bekle(3);
+        Assert.assertTrue(locaterGonul.successMessage.getText().contains("Address changed successfully."));
+        extentTest.info("Degişiklik billing adrese eklendi yazısının göründüğü doğrulandı.");
 
 
         ReusableMethods.bekle(4);
@@ -214,7 +213,7 @@ public class US12_Gonul extends ReportMethods {
     @Test
     public void testCase03() {
 
-      extentTest=extentReports.createTest("US12-TC03","Billing Adress ekleyebilme Testi");
+        extentTest=extentReports.createTest("US12-TC03","Billing Adress ekleyebilme Testi");
 
 //      Kullanici ana sayfaya gider.
         Driver.getDriver().get(ConfigReader.getProperty("url"));
@@ -299,7 +298,6 @@ public class US12_Gonul extends ReportMethods {
 
         Driver.closeDriver();
         extentTest.pass("Test sonlandırıldı.");
-
 
 
 

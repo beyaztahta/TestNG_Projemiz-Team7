@@ -9,15 +9,12 @@ import utilities.ReusableMethods;
 
 public class LocaterSerap {
 
-
-    @FindBy(css = "*[id=\"menu-item-1079\"]")
-    public WebElement myAccount;
-
     public LocaterSerap(){
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
-
+    @FindBy(id = "menu-item-1079")
+    public WebElement myAccount;
     //    1   llk Kayit
     @FindBy(xpath = "//*[@id='reg_username']")//username
     public WebElement username;
@@ -48,7 +45,7 @@ public class LocaterSerap {
 
     //       3   SignIn
 
-    @FindBy (css = "*[class=\"login inline-type\"]")
+    @FindBy (css = "*[class='login inline-type']")
     public WebElement signIn;
 
     @FindBy(css = "*[id='username']")
@@ -244,6 +241,9 @@ public class LocaterSerap {
     public WebElement firstName;
     @FindBy(css = "*[value='Save changes']")
     public WebElement saveChangesButton;
+    @FindBy(xpath = "//div[text()='Copyright © 2023 Hubcomfy. All Rights Reserved.']")
+    public WebElement sayfasonuText;
+
 
 
 

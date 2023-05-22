@@ -31,10 +31,7 @@ public class US16_testSet2 extends ReportMethods {
     @Test (priority = -5)
     public void signIn() {
 
-
-
-
-
+        extentTest=extentReports.createTest("US16","singIn");
         Driver.getDriver().get(ConfigReader.getProperty("storeMenagerPage"));
         extentTest.pass("hubcomfy.com sayfasına gidildi");
 

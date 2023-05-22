@@ -37,7 +37,7 @@ public class LocaterMali {
     @FindBy(id = "product_type")
     public WebElement ddMunuSimpleVariable;
 
-    @FindBy(id = "is_virtual")
+    @FindBy(xpath = "//*[@id='is_virtual']")
     public WebElement checkboxVirtual;
 
     @FindBy(id = "is_downloadable")

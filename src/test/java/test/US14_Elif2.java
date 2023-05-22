@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.LocaterAyse;
 import pages.LocaterElif;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -20,6 +21,7 @@ import static utilities.ReusableMethods.bekle;
 public class US14_Elif2 extends ReportMethods {
 
     LocaterElif locater = new LocaterElif();
+
     Actions actions = new Actions(Driver.getDriver());
 
     Faker faker = new Faker();
@@ -27,6 +29,7 @@ public class US14_Elif2 extends ReportMethods {
 
     @Test
     public void test04() {
+        LocaterElif locater = new LocaterElif();
         extentTest = extentReports.createTest("US14", "Categories seçilebilmeli, Yeni Categories eklenebilmeli");
 
         //Kullaınıcı https:// www.hubcomfy.com/ adresine gider
@@ -106,6 +109,7 @@ public class US14_Elif2 extends ReportMethods {
 
     @Test
     public void testCase05() {
+        LocaterElif locater = new LocaterElif();
         extentTest = extentReports.createTest("US14", "Product brands seçilebilmeli ,Yeni Product brands eklenebilmeli");
 
         //Kullaınıcı https:// www.hubcomfy.com/ adresine gider
@@ -183,6 +187,7 @@ public class US14_Elif2 extends ReportMethods {
 
     @Test
     public void testcase06() {
+        LocaterElif locater = new LocaterElif();
         extentTest = extentReports.createTest("US14", "Tags eklenebilmeli");
 
         //Kullaınıcı https:// www.hubcomfy.com/ adresine gider
@@ -248,6 +253,7 @@ public class US14_Elif2 extends ReportMethods {
 
     @Test
     public void testCase07() {
+        LocaterElif locater = new LocaterElif();
         extentTest = extentReports.createTest("US14", "Catalog visibility; Shop and search results, Shop only, Search results only, Hidden olarak seçilebilmeli");
 
         //Kullaınıcı https:// www.hubcomfy.com/ adresine gider

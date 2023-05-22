@@ -35,23 +35,23 @@ public class US17_testSet1_2 extends ReportMethods {
 
 
         Driver.getDriver().get(ConfigReader.getProperty("storeMenagerPage"));
-        extentTest.pass("hubcomfy.com sayfasına gidildi");
+        extentTest.pass("Kullanıcı hubcomfy.com sayfasına gelir");
 
         locate.signInInputMail.sendKeys(ConfigReader.getProperty("mail"));
-        extentTest.pass("geçerli mail adresi girildi");
+        extentTest.pass("geçerli mail adresi girilir");
 
         locate.signInInputPassword.sendKeys(ConfigReader.getProperty("password1"), Keys.PAGE_DOWN);
-        extentTest.pass("geçerli şifre girildi");
+        extentTest.pass("geçerli şifre girilir");
         ReusableMethods.bekle(1);
         locate.signInButton.click();
-        extentTest.pass("signIn button tıklandı ve giriş yapıldı");
+        extentTest.pass("signIn button tıklanır ve giriş yapılır");
         ReusableMethods.bekle(5);
         actions=new Actions(Driver.getDriver());
         ReusableMethods.bekle(2);
         actions.sendKeys(Keys.PAGE_UP).perform();
         ReusableMethods.bekle(1);
         locate.storeManagerButton.click();
-        extentTest.pass("store manager butonu tıklanarak sayfaya gidildi");
+        extentTest.pass("store manager butonu tıklanarak sayfa geçişi yapılır");
         ReusableMethods.bekle(2);
 
 
@@ -283,7 +283,7 @@ public class US17_testSet1_2 extends ReportMethods {
         r.keyPress(KeyEvent.VK_ENTER);
         r.keyRelease(KeyEvent.VK_ENTER);
 
-        ReusableMethods.waitForClickablility(locate.addToGalaryButton, 10);
+        ReusableMethods.bekle(10);
         locate.addToGalaryButton.click();
         extentTest.pass("Yüklenmesi istenen foto, localden sayfaya transfer edildi. ");
         r.delay(5000);
@@ -349,6 +349,7 @@ public class US17_testSet1_2 extends ReportMethods {
 
     @Test
     public void tc7_submitAndPublished() throws IOException {
+        LocaterMali locaterMali=new LocaterMali();
         extentTest=extentReports.createTest("US17","Submit and Published");
         extentTest.pass("Kullanıcı Store Manager sayfasına geldi ");
         ReusableMethods.scrollEnd();
@@ -370,8 +371,8 @@ public class US17_testSet1_2 extends ReportMethods {
         extentTest.pass("Son eklenen ürün sayfada görüntülendi  ");
         ReusableMethods.bekle(3);
 
-       // ReusableMethods.waitForClickablility(locate.viewButton,10);
-        locate.viewButton.click();
+        ReusableMethods.waitForClickablility(locate.viewButton,10);
+        locaterMali.viewButton.click();
         extentTest.pass("Son eklenen ürün  tıklandı ");
 
         ReusableMethods.bekle(3);

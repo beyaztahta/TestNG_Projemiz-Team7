@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.LocaterElif;
 import pages.LocaterSerap;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -22,35 +23,45 @@ import static org.testng.Assert.assertTrue;
 public class US05_Serap2 {
 
     //TC02  First name bilgilerini değiştirebilmeli
-    LocaterSerap serap = new LocaterSerap();
+
     JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
     Faker faker = new Faker();
     @BeforeClass
     public void beforeClass() {
+        LocaterSerap serap = new LocaterSerap();
+        LocaterElif locater=new LocaterElif();
         Driver.getDriver().get(ConfigReader.getProperty("url"));
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         serap.signIn.click();
         serap.signInEmail.sendKeys(ConfigReader.getProperty("serapUserName"), Keys.TAB,ConfigReader.getProperty("serapPass"));
-        serap.signInButton.click();
         ReusableMethods.bekle(3);
+        //serap.signInButton.click();
+        locater.signInLogin.click();
+        ReusableMethods.bekle(3);
+
     }
     @Test
     public void test01(){
+        LocaterSerap serap = new LocaterSerap();
+        ReusableMethods.bekle(3);
         //2 Kullanıcı sağ üst köşede My Account butonuna tıklar.
         //3 Kullanıcı My Account profilini görüntüler.
         serap.myAccount.click(); //TestStep02
+        ReusableMethods.bekle(3);
         assertTrue(serap.verifyMyAccountProfile.isDisplayed());
     }
     @Test
     public void test02(){
+        LocaterSerap serap = new LocaterSerap();
         //4 Kullanıcı sol tarafta Account Details sekmesini görüntüler.
         serap.myAccount.click();
         assertTrue(serap.verifyAccountDetails.isDisplayed());
     }
     @Test
     public void test03(){
+        LocaterSerap serap = new LocaterSerap();
         //5 Kullanıcı firstName kutucuğunu doldurur.
         serap.myAccount.click();
         wait.until(ExpectedConditions.elementToBeClickable(serap.AccountDetails));
@@ -65,6 +76,7 @@ public class US05_Serap2 {
 
     @Test
     public void test04(){
+        LocaterSerap serap = new LocaterSerap();
         //5 Kullanıcı lastName kutucuğunu doldurur.
         serap.myAccount.click();
         wait.until(ExpectedConditions.elementToBeClickable(serap.AccountDetails));
@@ -80,6 +92,7 @@ public class US05_Serap2 {
 
     @Test
     public void testStep05() {
+        LocaterSerap serap = new LocaterSerap();
         //5 Kullanıcı lastName kutucuğunu doldurur.
         serap.myAccount.click();
         wait.until(ExpectedConditions.elementToBeClickable(serap.AccountDetails));
@@ -94,6 +107,7 @@ public class US05_Serap2 {
     }
     @Test
     public void test06(){
+        LocaterSerap serap = new LocaterSerap();
     //5 Kullanıcı email kutucuğunu doldurur.
         serap.myAccount.click();
         wait.until(ExpectedConditions.elementToBeClickable(serap.AccountDetails));
@@ -109,6 +123,7 @@ public class US05_Serap2 {
 
     @Test
     public void test07(){
+        LocaterSerap serap = new LocaterSerap();
         //5 Kullanıcı biography kutucuğunu doldurur.
         serap.myAccount.click();
         wait.until(ExpectedConditions.elementToBeClickable(serap.AccountDetails));
@@ -126,6 +141,7 @@ public class US05_Serap2 {
 
     @Test
     public void test08() {
+        LocaterSerap serap = new LocaterSerap();
         //5 Kullanıcı password u degistirebilmelidir.
         serap.myAccount.click();
         wait.until(ExpectedConditions.elementToBeClickable(serap.AccountDetails));

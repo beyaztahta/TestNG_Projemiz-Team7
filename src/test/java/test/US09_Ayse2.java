@@ -18,7 +18,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest = extentReports.createTest("Hubcomfy", "Vendor olarak mail alma");
         ac01.start();
         //Vendor gecersiz mail girer
-        locaterOguzhan.email.sendKeys("asd");
+        locaterOguzhan.e_mail.sendKeys("asd");
         extentTest.info("gecersiz email adresi girildi");
 
         //Vendor herhangi bir yere tiklar
@@ -38,7 +38,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor $ sembolunu girer
-        locaterOguzhan.email.sendKeys("a$r@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("a$r@gmail.com");
         extentTest.info("Mailde $ sembolu kullanildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -56,7 +56,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor bosluk girer
-        locaterOguzhan.email.sendKeys("a b@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("a b@gmail.com");
         extentTest.info("Mail adresine bosluk karakter olarak girildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -74,7 +74,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor * sembolunu girer
-        locaterOguzhan.email.sendKeys("a*b@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("a*b@gmail.com");
         extentTest.info("Mailde * sembolu kullanildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -92,7 +92,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor % sembolunu girer
-        locaterOguzhan.email.sendKeys("a%b@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("a%b@gmail.com");
         extentTest.info("Mailde % sembolu kullanildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -110,7 +110,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor iki tane @ isareti girer
-        locaterOguzhan.email.sendKeys("afgt@gtyb@@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("afgt@gtyb@@gmail.com");
         extentTest.info("Mailde iki tane @ sembolu kullanildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -128,7 +128,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor sadece noktalardan olusan mail adresi girer
-        locaterOguzhan.email.sendKeys("......@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("......@gmail.com");
         extentTest.info("Mail adresine @ sembolunden once sadece nokta girisi yapildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -147,7 +147,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor hic olmayan bir web sitesinin mail adresi varmis girer
-        locaterOguzhan.email.sendKeys("asde@homiligirtlak.com");
+        locaterOguzhan.e_mail.sendKeys("asde@homiligirtlak.com");
         extentTest.info("Olmayan bir web sitesinden mail adresi varmis gibi giris yapildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -166,7 +166,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor mailde eksik  adres  girer
-        locaterOguzhan.email.sendKeys("a.b@com");
+        locaterOguzhan.e_mail.sendKeys("a.b@com");
         extentTest.info("Mail adresinde eksik bilgi girisi yapti(a.b@gmail)");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -185,7 +185,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor mailde alt cizgi girer(_) girer
-        locaterOguzhan.email.sendKeys("a_b@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("a_b@gmail.com");
         extentTest.info("Mail adresinde alt tire kullanildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -203,7 +203,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor mailde nduz cizgi girer
-        locaterOguzhan.email.sendKeys("a-b@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("a-b@gmail.com");
         extentTest.info("Mail adresinde duz cizgi kullanildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -222,7 +222,7 @@ public class US09_Ayse2 extends ReportMethods {
 
         bekle(3);
         //Vendor ingilizce disi bir karakter girer
-        locaterOguzhan.email.sendKeys("aşğ-b@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("aşğ-b@gmail.com");
         extentTest.info("Mail adresinde ingilizce disi karakterler kullanildi");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
@@ -239,7 +239,7 @@ public class US09_Ayse2 extends ReportMethods {
         extentTest.info("Yeni bilgi girmek icin sayfa refresh yapildi");
         bekle(3);
         //Vendor mailde eksik  adres  girer
-        locaterOguzhan.email.sendKeys("a.b@gmail.com");
+        locaterOguzhan.e_mail.sendKeys("a.b@gmail.com");
         extentTest.info("Mail adresinde nokta kullandi)");
         //Vendor herhangi bir yere tiklar
         click(locaterOguzhan.herhangiBirYer);
