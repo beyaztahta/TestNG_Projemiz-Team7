@@ -11,10 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.LocaterMali;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.ReportMethods;
-import utilities.ReusableMethods;
+import utilities.*;
 
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
@@ -293,13 +290,25 @@ public class US17_testSet1_2 extends ReportMethods {
 
     @Test(priority = -2)
     public void tc6_filingDescriptionNegatif() {
+
+
+     //  Eğer bir veriyi(datayı) .properties dosyasından almak istiyorsak, ConfigReader class'ından getProperty() methodunu
+     //  kullanarak .properties dosyamıza girdiğimiz key değerini belirtiriz ve bize bu key değerinin value sunu döndürür.
+
+     //  Eğer bir veriyi(datayı) excel dosyasından almak istiyorsak , oluşturmuş olduğumuz ExcelUtils Class'ında ki
+     //  methodları kullanarak istediğimiz veriyi alabiliriz.
+
         extentTest=extentReports.createTest("US17","Ürün Açıklama Alanları");
         extentTest.pass("Kullanıcı Store Manager sayfasına geldi ");
+
+        ExcelUtils excelUtils=new ExcelUtils("src/test/java/resources/description.xlsx","sayfa1");
+        String shortdsc=excelUtils.getCellData(1,1);
+        String dsc=excelUtils.getCellData(1,2);
 
         WebElement iframe2 = locate.descriptionIF;
         Driver.getDriver().switchTo().frame(iframe2);
         extentTest.pass("Description  Iframe alanına geçiş yapıldı");
-        locate.description.sendKeys("abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890");
+        locate.description.sendKeys(dsc);
         extentTest.pass("Description alanına '500char' uzunluğunda data girişi yapıldı");
         Driver.getDriver().switchTo().parentFrame();
         ReusableMethods.bekle(2);
@@ -307,7 +316,7 @@ public class US17_testSet1_2 extends ReportMethods {
         WebElement iframe = locate.shortdescriptionIF;
         Driver.getDriver().switchTo().frame(iframe);
         extentTest.pass("ShortDescription  Iframe alanına geçiş yapıldı");
-        locate.shortDescription.sendKeys("abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890abcdefghıi1234567890");
+        locate.shortDescription.sendKeys(shortdsc);
 
         extentTest.fail("ShortDescription alanına '500char' uzunluğunda data girişi KABUL EDİLDİ.Bu alanda her nekadar Acceptence Criteria lar kapsamında bir tanımlama olmasada Bu durum için BUG raporu açılacaktır.");
         Driver.getDriver().switchTo().parentFrame();
