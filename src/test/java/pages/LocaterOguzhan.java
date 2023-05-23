@@ -10,53 +10,6 @@ public class LocaterOguzhan {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(linkText = "Register")
-    public WebElement register;
-
-    @FindBy(linkText = "Become a Vendor")
-    public WebElement becomeAVendor;
-    @FindBy(xpath = "//input[@id='user_email']")
-    public WebElement e_mail;
-    @FindBy(xpath = "//*[text()='Verification code sent to your email: abc@abc.com.']")
-    public WebElement verificationCodeText;
-    @FindBy(xpath = "//span[@class='wcicon-status-completed']")
-    public WebElement verify;
-    @FindBy(xpath = "//span[@id='email']")
-    public WebElement fakeCopyAlma;
-    @FindBy(xpath = "//td[@colspan='2']")
-    public WebElement clickMail;
-    @FindBy(xpath = "//b")
-    public WebElement takeCode;
-
-    @FindBy(xpath = "//*[text()='Please provide a valid email address.']")
-    public WebElement error;
-
-    @FindBy(name = "wcfm_email_verified_input")
-    public WebElement verificationCodeBox;
-
-    @FindBy(xpath = "//strong")
-    public WebElement herhangiBirYer;
-    @FindBy(xpath = "//input[@id='passoword']")
-    public WebElement password;
-    @FindBy(xpath = "//input[@id='confirm_pwd']")
-    public WebElement password2;
-    @FindBy(xpath = "//input[@type='submit']")
-    public WebElement registerButton;
-    @FindBy(xpath = "//h2")
-    public WebElement vendorRegistration;
-
-    @FindBy(xpath = "//span[@class='wcicon-status-cancelled']")
-    public WebElement errorMessage;
-
-    @FindBy(xpath = "//*[text()='Password strength should be atleast \"Good\".']")
-    public WebElement errorPassword;
-    @FindBy(xpath = "//*[text()='This Email already exists. Please login to the site and apply as vendor.']")
-    public WebElement errorText;
-    @FindBy(xpath = "//*[text()='Email verification code invalid.']")
-    public WebElement emailVerificationCodeError;
-
-
-
     @FindBy(xpath = "(//*[@class='product-media'])[1]")
     public WebElement urun;
 

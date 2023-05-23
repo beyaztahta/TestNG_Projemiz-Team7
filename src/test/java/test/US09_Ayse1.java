@@ -1,7 +1,7 @@
 package test;
 
 import org.testng.annotations.Test;
-import pages.LocaterOguzhan;
+import pages.LocaterAyse;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReportMethods;
@@ -11,17 +11,17 @@ import static org.testng.AssertJUnit.assertTrue;
 
 public class US09_Ayse1 extends ReportMethods {
 
-    LocaterOguzhan locaterOguzhan;
+    LocaterAyse locaterAyse;
     public  void   start() {
-        locaterOguzhan = new LocaterOguzhan();
+        locaterAyse = new LocaterAyse();
         Driver.getDriver().get(ConfigReader.getProperty("url"));
 
         extentTest.info("https://hubcomfy.com/ sitesine gidildi");
         //register buttonuna tiklar
-        locaterOguzhan.register.click();
+        locaterAyse.register.click();
         extentTest.info("Register sayfasina gecildi");
         //Become a vendor secenegini tiklar
-        locaterOguzhan.becomeAVendor.click();
+        locaterAyse.becomeAVendor.click();
         extentTest.info("Vendor olmak icin vendor kayit olma bolumune gidildi");
     }
 
@@ -31,10 +31,10 @@ public class US09_Ayse1 extends ReportMethods {
 
         extentTest = extentReports.createTest("Hubcomfy", "Vendor olma");
         //Sign Up ekranından "Become a Vendor" linki ile giriş yapılabilmeli
-       locaterOguzhan = new LocaterOguzhan();
+       locaterAyse = new LocaterAyse();
         //Vendor siteye gider
         start() ;
-        assertTrue(locaterOguzhan.vendorRegistration.isDisplayed());
+        assertTrue(locaterAyse.vendorRegistration.isDisplayed());
         extentTest.pass("Vendor kayit sayfasinda oldugumuz kontrol edildi");
         extentTest.pass("Driver kapatildi");
 

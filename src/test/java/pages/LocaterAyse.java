@@ -5,8 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
-
 public class LocaterAyse {
 
 
@@ -155,18 +153,51 @@ public LocaterAyse(){
     public WebElement purchaseNote;
 
 //***********************
-@FindBy(xpath = "(//span[@class='fields_collapser attributes_collapser wcfmfa fa-arrow-circle-down'])[2]")
-public WebElement circleColor;
-    @FindBy(xpath = "(//input[@class='select2-search__field'])[2]")
-    public WebElement colorInput;
-    @FindBy(xpath = "//li[@role='option']")
-    public List<WebElement> colorInputList;
-    @FindBy(xpath = "(//button[text()='Add New'])[1]")
-    public WebElement colorAddNew;
-    @FindBy(id = "attributes_is_active_2")
-    public WebElement sizeButton;
-    @FindBy(xpath = "(//input[@class='select2-search__field'])[3]")
-    public WebElement sizeInput;
-    @FindBy(xpath = "(//button[text()='Add New'])[2]")
-    public WebElement sizeAddNew;
+@FindBy(linkText = "Register")
+public WebElement register;
+
+    @FindBy(linkText = "Become a Vendor")
+    public WebElement becomeAVendor;
+    @FindBy(xpath = "//input[@id='user_email']")
+    public WebElement e_mail;
+    @FindBy(xpath = "//*[text()='Verification code sent to your email: abc@abc.com.']")
+    public WebElement verificationCodeText;
+    @FindBy(xpath = "//span[@class='wcicon-status-completed']")
+    public WebElement verify;
+    @FindBy(xpath = "//span[@id='email']")
+    public WebElement fakeCopyAlma;
+    @FindBy(xpath = "//td[@colspan='2']")
+    public WebElement clickMail;
+    @FindBy(xpath = "//b")
+    public WebElement takeCode;
+
+    @FindBy(xpath = "//*[text()='Please provide a valid email address.']")
+    public WebElement error;
+
+    @FindBy(name = "wcfm_email_verified_input")
+    public WebElement verificationCodeBox;
+
+    @FindBy(xpath = "//strong")
+    public WebElement herhangiBirYer;
+    @FindBy(xpath = "//input[@id='passoword']")
+    public WebElement password;
+    @FindBy(xpath = "//input[@id='confirm_pwd']")
+    public WebElement password2;
+    @FindBy(xpath = "//input[@type='submit']")
+    public WebElement registerButton;
+    @FindBy(xpath = "//h2")
+    public WebElement vendorRegistration;
+
+    @FindBy(xpath = "//span[@class='wcicon-status-cancelled']")
+    public WebElement errorMessage;
+
+    @FindBy(xpath = "//*[text()='Password strength should be atleast \"Good\".']")
+    public WebElement errorPassword;
+    @FindBy(xpath = "//*[text()='This Email already exists. Please login to the site and apply as vendor.']")
+    public WebElement errorText;
+    @FindBy(xpath = "//*[text()='Email verification code invalid.']")
+    public WebElement emailVerificationCodeError;
+
+
+
 }
